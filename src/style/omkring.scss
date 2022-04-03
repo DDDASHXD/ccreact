@@ -1,0 +1,29 @@
+.omkring {
+  background-color: var(--secondary);
+  height: calc(100vh - var(--header-height));
+  padding: 5rem;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 3rem;
+
+  &__text{
+      text-align: center;
+
+      hr{
+          margin: auto;
+          border: 1px solid var(--primary);
+      }
+  }
+
+  &__subtitle{
+
+  }
+
+  &__title{
+
+  }
+
+  p{
+      color: var(--font-color-muted);
+  }
+}

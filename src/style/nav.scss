@@ -1,5 +1,9 @@
 .nav{
-    
+
+    a{
+        color: var(--font-color-muted);
+    }
+
     &__btn{
         background-color: var(--primary);
     }

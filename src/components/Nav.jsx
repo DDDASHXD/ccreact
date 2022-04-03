@@ -1,4 +1,5 @@
-import { Navbar, Container } from "../node_modules/react-bootstrap";
+import "../style/nav.scss";
+import { Navbar, Container } from "react-bootstrap";
 
 const Nav = () => {
   return (
@@ -17,7 +18,6 @@ const Nav = () => {
         <button className="nav__btn"></button>
       </Container>
     </Navbar>
-    
   );
 };
 
