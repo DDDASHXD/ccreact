@@ -1,0 +1,44 @@
+{
+    "home": [
+        {
+            "title": "Liv og karriere",
+            "subtitle": "coaching",
+            "description": "cmekdmkmed",
+            "bgImage": "/heroImg.png"
+        }
+    ],
+    "Behandlinger": [
+        {
+            "behandlingId": 1,
+            "name": "bla",
+            "description": "vnkkdcnkcndknck",
+            "price": "500 kr",
+            "time": "50 min",
+            "image": "/behandling1Img.png"
+        },
+        {
+            "behandlingId": 2,
+            "name": "bla",
+            "description": "vnkkdcnkcndknck",
+            "price": "500 kr",
+            "time": "50 min",
+            "image": "/behandling1Img.png"
+        },
+        {
+            "behandlingId": 3,
+            "name": "bla",
+            "description": "vnkkdcnkcndknck",
+            "price": "500 kr",
+            "time": "50 min",
+            "image": "/behandling1Img.png"
+        },
+        {
+            "behandlingId": 4,
+            "name": "bla",
+            "description": "vnkkdcnkcndknck",
+            "price": "500 kr",
+            "time": "50 min",
+            "image": "/behandling1Img.png"
+        }
+    ]
+}
