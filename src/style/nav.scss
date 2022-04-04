@@ -1,10 +1,21 @@
-.nav{
+.nav {
+  display: flex;
+  justify-content: space-between;
+  z-index: var(--z-nav);
+  padding: 1rem;
 
-    a{
-        color: var(--font-color-muted);
-    }
+  &__logo {
+    margin-right: 5rem;
+  }
+  ul {
+    display: flex;
+    gap: 2rem;
+  }
 
-    &__btn{
-        background-color: var(--primary);
-    }
+  a {
+    color: var(--font-color-muted);
+  }
+
+  &__btn {
+  }
 }

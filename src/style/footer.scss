@@ -1,6 +1,5 @@
 .footer {
   background-color: var(--secondary);
-  padding: 1rem 4rem;
 
   &__icons {
     justify-content: space-between;
@@ -17,8 +16,7 @@
     height: var(--copyright-height);
     background-color: var(--font-color);
     color: var(--body-color);
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
     justify-content: space-between;
-    width: 100vw;
   }
 }

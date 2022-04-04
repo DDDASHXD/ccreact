@@ -1,15 +1,15 @@
 import "../style/kontakt.scss";
 import React, { useState } from "react";
 import Iframe from "react-iframe";
-import { useForm } from "react-hook-form";
-import {
-    Container,
-    Row,
-    Col,
-    Form,
-    ThemeProvider,
-    FormText,
-} from "react-bootstrap";
+// import { useForm } from "react-hook-form";
+// import {
+//     Container,
+//     Row,
+//     Col,
+//     Form,
+//     ThemeProvider,
+//     FormText,
+// } from "react-bootstrap";
 //import { yupResolver } from "@hookform/resolvers/yup";
 //import * as yup from "yup";
 
