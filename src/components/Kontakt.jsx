@@ -1,25 +1,34 @@
 import "../style/kontakt.scss";
 import { React, useState } from "react";
 import Iframe from "react-iframe";
-
-const FORM_ENDPOINT = "";
+import { useForm } from "react-hook-form";
+import {
+  Container,
+  Row,
+  Col,
+  Form,
+  ThemeProvider,
+  FormText,
+} from "react-bootstrap";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 
 const Kontakt = () => {
-  const [submitted, setSubmitted] = useState(false);
-  const handleSubmit = () => {
-    setTimeout(() => {
-      setSubmitted(true);
-    }, 100);
-  };
+  const schema = yup.object().shape({
+    firstName: yup.string().min(3).required("skriv dit navn"),
+    age: yup.number("must be a number").required("is required").positive(),
+    //   .min(0, "Du skal være over 0")
+    //   .max(22, "du skal være under 23"),
+  });
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({ resolver: yupResolver(schema) });
 
-  if (submitted) {
-    return (
-      <>
-        <div className="text-2xl">Tak for beskeden!</div>
-        <div className="text-md">We'll be in touch soon.</div>
-      </>
-    );
-  }
+  const onSubmit = (data) => {
+    console.log(data);
+  };
 
   return (
     <section className="kontakt">
@@ -42,47 +51,57 @@ const Kontakt = () => {
         </div>
 
         <div className="kontakt__form">
-          <form
-            action={FORM_ENDPOINT}
-            onSubmit={handleSubmit}
-            method="POST"
-            target="_blank"
+          <Form
+            className="form block-example grid"
+            onSubmit={handleSubmit(onSubmit)}
           >
-            <div className="mb-3 pt-0">
+            <Row>
+              <Col xs={6}>
+                <label>Fornavn</label>
+                <input
+                  {...register(
+                    "firstName"
+                    // { required: true, maxLength: 50 }
+                  )}
+                  className="form-control"
+                  id="firstName"
+                  type="firstName"
+                />
+                <FormText color="muted">{errors.firstName?.message} </FormText>
+              </Col>
+              <Col xs={6}>
+                <label>Efternavn</label>
+                <input
+                  {...register(
+                    "lastname"
+                    // { required: true, maxLength: 50 }
+                  )}
+                  className="form-control"
+                  id="lastname"
+                  type="lastName"
+                />
+                <FormText color="muted">{errors.lastName?.message} </FormText>
+              </Col>
+              <Col xs={6}></Col>
+              <Col xs={6}></Col>
+              <Col xs={12}></Col>
+            </Row>
+
+            <div className="form-group form-check">
               <input
-                type="text"
-                placeholder="Navn"
-                name="name"
-                className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-                required
-              />
+                name="terms"
+                type="checkbox"
+                {...register("terms")}
+                id="terms"
+                classNam
+                e={`form-check-input ${errors.terms ? "is-invalid" : ""}`}
+              />{" "}
+              <label>Accept Terms & Conditions</label>
+              <div className="invalid-feedback">{errors.terms?.message}</div>
             </div>
-            <div className="mb-3 pt-0">
-              <input
-                type="email"
-                placeholder="Email"
-                name="email"
-                className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-                required
-              />
-            </div>
-            <div className="mb-3 pt-0">
-              <textarea
-                placeholder="Din besked"
-                name="message"
-                className="kontakt__input"
-                required
-              />
-            </div>
-            <div className="mb-3 pt-0">
-              <button
-                className="bg-blue-500 text-white active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                type="submit"
-              >
-                Send a message
-              </button>
-            </div>
-          </form>
+
+            <button className="form__btn">Send</button>
+          </Form>
         </div>
       </div>
 
