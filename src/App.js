@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { Grid, Breakpoint, } from 'react-bootstrap'
+//import { Grid, Breakpoint, } from 'react-bootstrap'
 import Landing from './views/Landing';
 import './style/variables.scss';
 
