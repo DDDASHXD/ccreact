@@ -1,4 +1,4 @@
-import Nav from "../components/Nav.jsx";
+import MyNav from "../components/Nav.jsx";
 import Hero from "../components/Hero.jsx";
 import Omkring from "../components/Omkring.jsx";
 import Behandlinger from "../components/Behandlinger.jsx";
@@ -8,7 +8,7 @@ import Footer from "../components/Footer.jsx";
 const Landing = (props) => {
   return (
     <div>
-      <Nav />
+      <MyNav />
       <Hero />
       <Omkring />
       <Behandlinger />

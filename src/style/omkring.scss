@@ -1,29 +1,28 @@
 .omkring {
   background-color: var(--secondary);
-  height: calc(100vh - var(--header-height));
+  height: 100vh;
   padding: 5rem;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   gap: 3rem;
 
-  &__text{
-      text-align: center;
+  &__textarea {
+    text-align: center;
 
-      hr{
-          margin: auto;
-          border: 1px solid var(--primary);
-      }
+    hr {
+      margin: 1rem auto;
+      border: 1px solid var(--primary);
+      width: 200px;
+    }
   }
 
-  &__subtitle{
-
+  &__subtitle {
   }
 
-  &__title{
-
+  &__title {
   }
 
-  p{
-      color: var(--font-color-muted);
+  p {
+    color: var(--font-color-muted);
   }
 }

@@ -3,7 +3,7 @@
         {
             "title": "Liv og karriere",
             "subtitle": "coaching",
-            "description": "cmekdmkmed",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "bgImage": "/heroImg.png"
         }
     ],
@@ -11,7 +11,7 @@
         {
             "behandlingId": 1,
             "name": "bla",
-            "description": "vnkkdcnkcndknck",
+            "description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut. labore et dolore magnam aliquam quaerat voluptatem. Excepteur sint occaecat cupidatat non proident.",
             "price": "500 kr",
             "time": "50 min",
             "image": "/behandling1Img.png"

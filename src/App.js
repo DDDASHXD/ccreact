@@ -4,6 +4,7 @@ import Landing from './views/Landing';
 import './style/variables.scss';
 
 function App() {
+
   return (
     <div className="App">
       <Router>

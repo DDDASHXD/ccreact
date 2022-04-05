@@ -1,11 +1,14 @@
 .hero {
   justify-content: center;
   display: flex;
-  height: calc(100vh - var(--header-height));
-  background-image: "../assets/images/background.png";
+  height: 100vh;
+  background-image: url("../assets/images/background.png");
   padding-top: var(--header-height);
   position: relative;
-  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  z-index: 1;
 
   &::before {
     content: "";
@@ -21,6 +24,8 @@
   &__container {
     text-align: center;
     position: absolute;
+    padding-top: 8rem;
+    width: 500px;
 
     h1,
     span {
@@ -33,7 +38,9 @@
     }
 
     p {
+      margin-top: 0.5rem;
       color: var(--font-color-muted);
+      font-weight: var(--font-medium);
     }
   }
 }

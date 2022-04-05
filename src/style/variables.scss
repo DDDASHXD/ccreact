@@ -1,5 +1,6 @@
+@import url("https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css");
 :root {
-  --header-height: 3rem;
+  --header-height: 5rem;
   --footer-height: 5rem;
   --copyright-height: 2rem;
 
@@ -7,7 +8,8 @@
   --primary: #6a915f;
   --secondary: #dfe1dc;
   --body-color: #f7f8f7;
-  --form-color: #ebebeb;
+  --form-color: #eeecec;
+  --form-color-focus: #e0dede;
 
   --title-color: #1f1f1f;
   --font-color: #1f1f1f;
@@ -16,10 +18,10 @@
   --shadow: 0 0 4px 1px rgba(0, 0, 0, 0.171);
 
   /* font size */
-  --big-font-size: 3rem;
-  --h1-font-size: 2rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
+  --big-font-size: 4rem;
+  --h1-font-size: 3rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.5rem;
 
   --normal-font-size: 0.938rem;
 
@@ -62,13 +64,29 @@ body {
   color: var(--font-color);
   background-color: var(--bg-color);
   font-family: var(--font-family);
+  overflow-x: hidden;
 }
 
 button {
-  padding: 0.25rem 1rem;
+  padding: 0.75rem 2rem;
   border-radius: 5px;
   border: 0;
   margin: 0.5rem;
   box-shadow: var(--shadow);
   color: var(--body-color);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semibold);
+}
+
+.title {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semibold);
+}
+
+.subtitle {
+  font-size: var(--h3-font-size);
+}
+
+.muted {
+  color: var(--font-color-muted);
 }

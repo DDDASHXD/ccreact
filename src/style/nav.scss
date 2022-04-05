@@ -1,15 +1,20 @@
-.nav { 
-  display: flex;
+.nav {
+  // display: flex;
   justify-content: space-between;
   z-index: var(--z-nav);
+  // position: fixed;
   padding: 1rem;
+  height: var(--header-height);
+
+  width: 100%;
 
   &__logo {
-    margin-right: 5rem;
+    margin-right: 15rem;
   }
   ul {
     display: flex;
     gap: 2rem;
+    margin: 1rem;
   }
 
   a {
@@ -17,5 +22,6 @@
   }
 
   &__btn {
+    background-color: var(--primary);
   }
 }

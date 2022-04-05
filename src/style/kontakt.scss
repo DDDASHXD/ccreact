@@ -1,20 +1,77 @@
 .kontakt {
   background-color: var(--secondary);
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-evenly;
+
   height: calc(100vh - var(--header-height));
-  padding: 1rem;
-  text-align: start;
+  // padding: 3rem;
+
+  &__container {
+    // width: 40vw;
+
+    h2 {
+    }
+  }
 
   &__info {
-    //   line-height: ;
+    display: flex;
+    flex-direction: column;
+    line-height: 3rem;
+    // margin-bottom: 2rem;
 
     a {
       color: var(--font-color);
+      display: flex;
+    }
+
+    p {
+      font-weight: var(--font-semibold);
+    }
+
+    .bx-tada-hover {
+      font-size: 1.75rem;
+      // margin: 0.7rem;
     }
   }
 
   &__map {
-    box-shadow: var(--shadow);
-    border-radius: 0.5rem;
+    // width: 40vw;
+    // height: 100%;
+
+    iframe {
+      border-radius: 0.1rem;
+      width: 100%;
+      height: 100%;
+      border: none;
+      box-shadow: var(--shadow);
+    }
+  }
+}
+
+.form {
+  // display: flex;
+  // flex-direction: column;
+
+  input {
+    background-color: var(--form-color);
+    border: 0;
+
+    box-shadow: inset 1px 2px 8px #0000001c;
+    border-radius: 3px;
+    margin: 0.5rem 0.5rem 0 0;
+    padding: 0.75rem;
+
+    &:focus {
+      background-color: var(--form-color-focus);
+      box-shadow: inset 1px 2px 8px #0000001c;
+    }
+  }
+
+  // &__row {
+  //   display: flex;
+  // }
+
+  &__btn {
+    background-color: var(--font-color);
   }
 }
