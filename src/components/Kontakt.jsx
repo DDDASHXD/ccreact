@@ -7,6 +7,14 @@ import { Row, Col, Form, Container } from "react-bootstrap";
 import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 
 const Kontakt = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => console.log(data);
+  console.log(errors);
+
   return (
     <section className="kontakt">
       <Container fluid>
@@ -66,7 +74,15 @@ const Kontakt = () => {
                         controlId="formGroupPassword"
                       >
                         <Form.Label>Tlf nummer</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
+                        <Form.Control
+                          type="tel"
+                          placeholder="Mobile number"
+                          {...register("Mobile number", {
+                            required: true,
+                            minLength: 6,
+                            maxLength: 12,
+                          })}
+                        />
                       </Form.Group>
                     </Col>
 
