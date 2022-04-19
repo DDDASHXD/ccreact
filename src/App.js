@@ -1,7 +1,9 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 //import { Grid, Breakpoint, } from 'react-bootstrap'
 import Landing from './views/Landing';
+import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import './style/variables.scss';
+
 
 function App() {
 

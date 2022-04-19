@@ -2,15 +2,13 @@
   background-color: var(--secondary);
   display: flex;
   justify-content: space-evenly;
+  height: 100vh;
 
-  height: calc(100vh - var(--header-height));
+  // height: calc(100vh - var(--header-height));
   // padding: 3rem;
 
   &__container {
     // width: 40vw;
-
-    h2 {
-    }
   }
 
   &__info {
@@ -22,14 +20,23 @@
     a {
       color: var(--font-color);
       display: flex;
+      position: relative;
+      margin: 2rem 0;
     }
 
     p {
       font-weight: var(--font-semibold);
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      margin-left: 2rem;
     }
 
     .bx-tada-hover {
       font-size: 1.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
       // margin: 0.7rem;
     }
   }

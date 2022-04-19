@@ -1,10 +1,10 @@
 import "../style/behandlinger.scss";
 import data from "../assets/text.json";
 import { Row, Col, Container } from "react-bootstrap";
-import "../../node_modules/bootstrap/dist/css/bootstrap.css";
+
 const Behandlinger = () => {
   return (
-    <section className="behandlinger">
+    <section className="behandlinger pt-md-5">
       <Container className="">
         <h2 className="title">Behandlinger</h2>
         <Row
@@ -12,7 +12,7 @@ const Behandlinger = () => {
           xs={12}
           md={7}
         >
-          <Col className="order-xs-2 order-md-1 bg-secondary">
+          <Col className="order-xs-2 order-md-1">
             <span>60 min</span>
             <h3>Coachende samtaler</h3>
             <p className="muted">{data.Behandlinger[0].description}</p>
@@ -21,7 +21,7 @@ const Behandlinger = () => {
             </a>
           </Col>
 
-          <Col className="order-xs-1 order-md-2 bg-secondary ">
+          <Col className="order-xs-1 order-md-2">
             <figure>
               <img src="" alt="" />
               <figcaption className="pris">500 kr</figcaption>

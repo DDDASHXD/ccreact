@@ -1,17 +1,22 @@
-import { Navbar } from "react-bootstrap";
-import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import { Navbar, Row, Col } from "react-bootstrap";
+import logo from "../assets/logo.svg";
+
 import "../style/nav.scss";
 // import { Navbar, Container } from "react-bootstrap";
 // import { BrowserRouter as Link } from "react-router-dom";
 
 const MyNav = () => {
   return (
-    <Navbar className="nav fixed-top" expand="lg">
-      <figure className="nav__logo">logo</figure>
+    <Navbar fluid className="nav fixed-top p-1 " expand="lg">
+      <figure className="col-1">
+        <img src={logo} alt="Coach Kolding logo" className="w-100 m-5" />
+      </figure>
 
-      <Navbar.Collapse id="basic-navbar-nav">
-        <nav>
-          <ul>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+      <Navbar.Collapse id="basic-navbar-nav" className="col-10">
+        <nav className="col-10 pe-md-5">
+          <ul className="justify-content-end">
             <li>
               <a href="/">Home</a>
             </li>
@@ -29,8 +34,11 @@ const MyNav = () => {
             </li>
           </ul>
         </nav>
+
+        <Col className="col-2 d-flex justify-content-center">
+          <button className="nav__btn">Bestil tid</button>
+        </Col>
       </Navbar.Collapse>
-      <button className="nav__btn">Bestil tid</button>
     </Navbar>
   );
 };

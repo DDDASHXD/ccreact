@@ -1,12 +1,16 @@
 {
-    "home": [
-        {
-            "title": "Liv og karriere",
-            "subtitle": "coaching",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "bgImage": "/heroImg.png"
-        }
-    ],
+    "home": {
+        "title": "Liv og karriere",
+        "subtitle": "coaching",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "bgImage": "/heroImg.png"
+    },
+    "omkring": {
+        "lene-img": "/assets/lene.jpeg",
+        "room-img": "/assets/room.jpg",
+        "home-img": "/assets/home.jpg",
+        "text": ""
+    },
     "Behandlinger": [
         {
             "behandlingId": 1,
@@ -40,5 +44,15 @@
             "time": "50 min",
             "image": "/behandling1Img.png"
         }
-    ]
+    ],
+    "footer": {
+        "justdiv": {
+            "title": "Website Creators",
+            "name": "JustDiv",
+            "text": "We are a small buisness of 2 people. A frontend developer / graphic designer, Julie Boeriis Thomhav(jbt.graphics). A backend developer, Sebastian Skov Nielsen(DashXD). ",
+            "facebook": "",
+            "linkedin": "",
+            "instagram": ""
+        }
+    }
 }
