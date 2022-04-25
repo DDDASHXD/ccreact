@@ -3,10 +3,23 @@
   height: 100vh;
   position: relative;
 
-  .center {
-    top: 50%;
-    transform: translateY(-50%);
-    position: absolute;
+  &__info {
+    background-color: var(--form-color);
+    box-shadow: var(--inner-shadow);
+    border-radius: 5px;
+
+    h3 {
+      font-size: var(--font-h3);
+      text-align: center;
+      font-weight: var(--font-semibold);
+      color: var(--primary);
+    }
+
+    li {
+      font-size: var(--smaller-font-size);
+      list-style: circle !important;
+      
+    }
   }
 
   &__textarea {
@@ -27,5 +40,13 @@
 
   p {
     color: var(--font-color-muted);
+  }
+
+  h3 {
+    text-align: start;
+  }
+  &__list {
+    line-height: 0.5rem;
+    text-align: start;
   }
 }

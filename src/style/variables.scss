@@ -16,14 +16,15 @@
   --font-color-muted: #747474;
 
   --shadow: 0 0 4px 1px rgba(0, 0, 0, 0.171);
+  --inner-shadow: inset 1px 2px 8px #0000001c;
 
   /* font size */
-  --big-font-size: 4rem;
-  --h1-font-size: 3rem;
-  --h2-font-size: 2rem;
-  --h3-font-size: 1.5rem;
+  --big-font-size: calc(1.475rem + 2.7vw);
+  --h1-font-size: calc(1.375rem + 1.5vw);
+  --h2-font-size: calc(1.325rem + 0.9vw);
+  --h3-font-size: calc(1.3rem + 0.6vw);
 
-  --normal-font-size: 0.938rem;
+  --normal-font-size: calc(0.7rem + 0.3vw);
 
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;

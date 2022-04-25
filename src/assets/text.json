@@ -2,46 +2,69 @@
     "home": {
         "title": "Liv og karriere",
         "subtitle": "coaching",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "description": "Personlig udvikling. I rolige omgivelser vil jeg guide dig på vej i den retning du ønsker. Find dit personlige udviklingspotentiale. Nå målene i dit liv. Genfind livsgnisten. Få din retning i livet. Opnå et liv i balance. Jeg kan være din guide på rejsen til dit… ",
         "bgImage": "/heroImg.png"
     },
     "omkring": {
         "lene-img": "/assets/lene.jpeg",
         "room-img": "/assets/room.jpg",
         "home-img": "/assets/home.jpg",
-        "text": ""
+        "text": "Skal jeg være din guide på rejsen til dine livsmål? Ønsker du personlig udvikling? Vil du finde balancen i livet? Vil du nå dine mål.Jeg har 30 års erfaring med at guide, støtte enkeltpersoner og grupper med personlig/faglig udvikling. Det vil jeg gerne give dig chancen for at opnå din udvikling, derfor tilbyder jeg coaching. ",
+        "title": "Faglig baggrund",
+        "erfaring": [
+            "Socialrådgiver",
+            "NLP Coach Practitioner",
+            "NLP Master Coach Practitioner",
+            "Mediation ",
+            "NADA-akupunktør ",
+            "Gestaltterapi",
+            "Metakognitiv terapi",
+            "Åben dialog",
+            "Feedback Informed Treatment (FIT)",
+            "Certified TRU Practitioner",
+            "Empowement",
+            "Værdiskabelse"
+        ]
     },
     "Behandlinger": [
         {
             "behandlingId": 1,
-            "name": "bla",
-            "description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut. labore et dolore magnam aliquam quaerat voluptatem. Excepteur sint occaecat cupidatat non proident.",
+            "name": "Coachende samtaler",
+            "description": "Samtidig med den coachende samtale tilbydes du NADA behandling. Nada behandlinger en behandling, som kan under støtte udbyttet af samtalen.",
             "price": "500 kr",
-            "time": "50 min",
+            "time": "60 min",
             "image": "/behandling1Img.png"
         },
         {
             "behandlingId": 2,
-            "name": "bla",
-            "description": "vnkkdcnkcndknck",
-            "price": "500 kr",
-            "time": "50 min",
+            "name": "Coachende samtaler + NADA",
+            "description": "Samtidig med den coachende samtale tilbydes du NADA behandling. Nada behandlinger en behandling, som kan under støtte udbyttet af samtalen.",
+            "price": "550 kr",
+            "time": "60 min",
             "image": "/behandling1Img.png"
         },
         {
             "behandlingId": 3,
-            "name": "bla",
-            "description": "vnkkdcnkcndknck",
-            "price": "500 kr",
-            "time": "50 min",
+            "name": "NADA i gruppe (ved min 4 personer)",
+            "description": "NADA behandling kan blandt meget andet øge dit fokus, virke afslappende, afstressende, modvirke angst.",
+            "price": "50 kr",
+            "time": "45 min",
+            "image": "/behandling1Img.png"
+        },
+        {
+            "behandlingId": 3,
+            "name": "Parsamtaler",
+            "description": "Ved parsamtaler kan I, som par få støtte til at arbejde med parforholdet, så i opnår en større indsigt i parforholdet og hinanden. Parsamtaler kan både være forebyggende og når der er opstået udfordringer i parforholdet.",
+            "price": "850 kr",
+            "time": "120 min",
             "image": "/behandling1Img.png"
         },
         {
             "behandlingId": 4,
-            "name": "bla",
-            "description": "vnkkdcnkcndknck",
-            "price": "500 kr",
-            "time": "50 min",
+            "name": "Netværkssamtaler",
+            "description": "Kan du får støtte til at føre samtaler med andre i dit nærtværk, det kan være både det private netværk og øvrige netværk.",
+            "price": "850 kr",
+            "time": "120 min",
             "image": "/behandling1Img.png"
         }
     ],

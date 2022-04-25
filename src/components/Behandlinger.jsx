@@ -14,7 +14,7 @@ const Behandlinger = () => {
         >
           <Col className="order-xs-2 order-md-1">
             <span>60 min</span>
-            <h3>Coachende samtaler</h3>
+            <h3>{data.Behandlinger[0].name}</h3>
             <p className="muted">{data.Behandlinger[0].description}</p>
             <a href="/">
               Læs mere <i class="bx bx-chevron-right"></i>
@@ -36,14 +36,8 @@ const Behandlinger = () => {
         >
           <Col xs={{ order: 2 }}>
             <span>60 min</span>
-            <h3>Coachende samtaler</h3>
-            <p className="muted">
-              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-              consectetur, adipisci velit, sed quia non numquam eius modi
-              tempora incidunt ut. labore et dolore magnam aliquam quaerat
-              voluptatem. Excepteur sint occaecat cupidatat non proident.
-              {/* {data.Behandlinger[1]} */}
-            </p>
+            <h3>{data.Behandlinger[1].name}</h3>
+            <p className="muted">{data.Behandlinger[1].description}</p>
             <a href="/">
               Læs mere <i class="bx bx-chevron-right"></i>
             </a>
@@ -60,14 +54,44 @@ const Behandlinger = () => {
         <Row className="behandlinger__data gap-5 justify-content-center">
           <Col xs={{ order: 1 }}>
             <span>60 min</span>
-            <h3>Coachende samtaler</h3>
-            <p className="muted">
-              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-              consectetur, adipisci velit, sed quia non numquam eius modi
-              tempora incidunt ut. labore et dolore magnam aliquam quaerat
-              voluptatem. Excepteur sint occaecat cupidatat non proident.
-              {/* {data.Behandlinger[1]} */}
-            </p>
+            <h3>{data.Behandlinger[2].name}</h3>
+            <p className="muted">{data.Behandlinger[2].description}</p>
+            <a href="/">
+              Læs mere <i class="bx bx-chevron-right"></i>
+            </a>
+          </Col>
+
+          <Col xs={{ order: 2 }}>
+            <figure>
+              <img src="" alt="" />
+              <figcaption className="pris">500 kr</figcaption>
+            </figure>
+          </Col>
+        </Row>
+
+        <Row className="behandlinger__data gap-5 justify-content-center">
+          <Col xs={{ order: 2 }}>
+            <span>60 min</span>
+            <h3>{data.Behandlinger[3].name}</h3>
+            <p className="muted">{data.Behandlinger[3].description}</p>
+            <a href="/">
+              Læs mere <i class="bx bx-chevron-right"></i>
+            </a>
+          </Col>
+
+          <Col xs={{ order: 1 }}>
+            <figure>
+              <img src="" alt="" />
+              <figcaption className="pris">500 kr</figcaption>
+            </figure>
+          </Col>
+        </Row>
+
+        <Row className="behandlinger__data gap-5 justify-content-center">
+          <Col xs={{ order: 1 }}>
+            <span>60 min</span>
+            <h3>{data.Behandlinger[4].name}</h3>
+            <p className="muted">{data.Behandlinger[4].description}</p>
             <a href="/">
               Læs mere <i class="bx bx-chevron-right"></i>
             </a>

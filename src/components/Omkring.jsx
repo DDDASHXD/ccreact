@@ -1,37 +1,53 @@
 import "../style/omkring.scss";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Image } from "react-bootstrap";
 import data from "../assets/text.json";
 
 const Omkring = () => {
   return (
     <section className="omkring container-fluid">
-      <Row className="p-md-5 center">
-        <Col md={3}>
+      <Row className="p-md-2 d-flex ">
+        <Col xs={7} md={7} lg={9} className=" p-5">
+          <Row className="p-5">
+            <Col xs={12} className="omkring__textarea">
+              <span className="subtitle">Omkring</span>
+              <h2 className="title">Coach Kolding</h2>
+              <hr />
+              <p>{data.omkring.text}</p>
+              {/* kontakt knap */}
+            </Col>
+
+            <Col>
+              <figure>
+                <Row className=" g-0 pt-5">
+                  <Col xs={6} md={6}>
+                    <Image fluid src={data.omkring["room-img"]} alt="" />
+                  </Col>
+
+                  <Col xs={6} md={6}>
+                    <Image fluid src={data.omkring["home-img"]} alt="" />
+                  </Col>
+                </Row>
+              </figure>
+            </Col>
+          </Row>
+        </Col>
+
+        <Col xs={5} md={5} lg={3} className="p-4 omkring__info">
           <figure>
-            <img
+            <Image
+              fluid
               src={data.omkring["lene-img"]}
               alt="Portrat billede af Lene Thomhav"
             />
           </figure>
-        </Col>
-
-        <Col md={6} className="omkring__textarea">
-          <span className="subtitle">Omkring</span>
-          <h2 className="title">Coach Kolding</h2>
-          <hr />
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
-            recusandae quis nemo beatae praesentium asperiores molestiae in sunt
-            deleniti modi.
-          </p>
-
-          {/* kontakt knap */}
-        </Col>
-        <Col md={3}>
-          <figure>
-            <img src={data.omkring["room-img"]} alt="" />
-            <img src={data.omkring["home-img"]} alt="" />
-          </figure>
+          <h3>{data.omkring.title}</h3>
+          <div className="omkring__list">
+            {data.omkring.erfaring.map((item) => (
+              <ul>
+                <li>{item}</li>
+              </ul>
+            ))}
+          </div>
         </Col>
       </Row>
     </section>
