@@ -4,10 +4,10 @@ import data from "../assets/text.json";
 
 const Omkring = () => {
   return (
-    <section className="omkring container-fluid p-0 pt-md-5">
-      <Row className=" d-flex p-md-5 p-0 px-3 px-md-0">
+    <section className="omkring container-fluid p-0 pt-md-5" id="nav-omkring">
+      <Row className="d-flex p-md-5 p-0 px-3 px-md-0">
         <Col xs={12} md={5} lg={3} className="p-md-4 omkring__info pt-3">
-          <Row>
+          <row>
             <figure className="col-6 col-md-12">
               <Image
                 fluid
@@ -15,22 +15,20 @@ const Omkring = () => {
                 alt="Portrat billede af Lene Thomhav"
               />
             </figure>
-            <div className="col-6 col-md-12">
-              <h3>{data.omkring.title}</h3>
-              <div className="omkring__list">
-                {data.omkring.erfaring.map((item) => (
-                  <ul>
-                    <li>{item}</li>
-                  </ul>
-                ))}
-              </div>
+            <h3>{data.omkring.title}</h3>
+            <div className="omkring__list">
+              {data.omkring.erfaring.map((item) => (
+                <ul>
+                  <li>{item}</li>
+                </ul>
+              ))}
             </div>
-          </Row>
+          </row>
         </Col>
 
         <Col xs={12} md={7} lg={9} className="p-0 p-md-5">
           <Row className="p-5">
-            <Col  xs={12} className="omkring__textarea pt-4">
+            <Col xs={12} className="omkring__textarea pt-4">
               <span className="subtitle">Omkring</span>
               <h2 className="title">Coach Kolding</h2>
               <hr />
