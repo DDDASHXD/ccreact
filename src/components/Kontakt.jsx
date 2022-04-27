@@ -30,11 +30,11 @@ const Kontakt = () => {
                   </a>
                   <a href="/">
                     <i className="bx bx-phone bx-tada-hover"></i>
-                    <p>Grydhøj 16, 6000 Kolding</p>
+                    <p>32 70 14 94</p>
                   </a>
                   <a href="/">
                     <i className="bx bx-envelope bx-tada-hover"></i>
-                    <p>Grydhøj 16, 6000 Kolding</p>
+                    <p>info@coachkolding.dk</p>
                   </a>
                 </Col>
               </Row>

@@ -20,11 +20,11 @@ const Omkring = () => {
               <figure>
                 <Row className=" g-0 pt-5">
                   <Col xs={6} md={6}>
-                    <Image fluid src={data.omkring["room-img"]} alt="" />
+                    <Image className="img-1"  src={data.omkring["room-img"]} alt="" />
                   </Col>
 
                   <Col xs={6} md={6}>
-                    <Image fluid src={data.omkring["home-img"]} alt="" />
+                    <Image className="img-2" src={data.omkring["home-img"]} alt="" />
                   </Col>
                 </Row>
               </figure>

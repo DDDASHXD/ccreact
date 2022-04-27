@@ -18,7 +18,6 @@
     li {
       font-size: var(--smaller-font-size);
       list-style: circle !important;
-      
     }
   }
 
@@ -49,4 +48,14 @@
     line-height: 0.5rem;
     text-align: start;
   }
+}
+
+.img-1 {
+  object-fit: cover;
+  height: 235px;
+}
+
+.img-2 {
+  object-fit: cover;
+  height: 235px;
 }

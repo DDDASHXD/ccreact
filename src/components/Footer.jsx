@@ -19,16 +19,22 @@ const Footer = () => {
         <Col md={8}>
           <Row>
             <Col>
-              <h3>conatct info</h3>
+              <h3>Firma oplysninger</h3>
+              <ul>
+                <li>CVR-nr.: 36 32 44 65</li>
+                <li>Betaling: over mobilpay efter behandling.</li>
+              </ul>
             </Col>
             <Col>
               <h3>Andre muligheder</h3>
               <ul>
                 <li>
-                  <a href=""></a>
+                  <a href="https://nada-danmark.dk/netvaerk-og-behandling/behandlernetvaerk/">Nada - Danmark</a>
+                  <p>mutet text der forklare hvad linket fører hen til</p>
                 </li>
                 <li>
-                  <a href=""></a>
+                  <a href="https://nlphuset.dk/?gclid=Cj0KCQjwiNSLBhCPARIsAKNS4_fBA4zSqv9zIun89VW9gSeHsIPOv1rAGwCZVaGB5sQCYOzLRGwtszYaApkZEALw_wcB ">Npl Huset</a>
+                  <p>mutet text der forklare hvad linket fører hen til</p>
                 </li>
               </ul>
             </Col>
@@ -38,7 +44,7 @@ const Footer = () => {
 
       <Col xs={12} className="footer__copy px-5 py-1">
         <p>©Coach Kolding</p>
-        <p>@Dash Sulutions</p>
+        <p>@Just Div</p>
       </Col>
     </footer>
   );
