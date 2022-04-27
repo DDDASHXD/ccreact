@@ -17,8 +17,8 @@ const Kontakt = () => {
 
   return (
     <Container fluid className="kontakt p-md-5">
-      <Row className="justify-contet-center pt-md-5">
-        <h2 className="title text-xs-center text-md-center">Kontakt</h2>
+      <Row className="justify-contet-center pt-4 pt-md-5">
+        <h2 className="title text-center text-md-start">Kontakt</h2>
         <Col xs={12} md={6} className="kontakt__container ">
           <Row className="ps-md-5">
             <Col xs={5} md={12} className="pb-md-5">

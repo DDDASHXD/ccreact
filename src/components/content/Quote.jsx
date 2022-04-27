@@ -1,5 +1,5 @@
 import { Container } from "react-bootstrap";
-import data from "../assets/text.json";
+import data from "../../assets/text.json";
 
 const Quote = () => {
   return (

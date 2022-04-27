@@ -28,28 +28,36 @@
     },
     "Behandlinger": [
         {
-            "behandlingId": 1,
+            "id": 1,
             "name": "Coachende samtaler",
             "description": "Samtidig med den coachende samtale tilbydes du NADA behandling. Nada behandlinger en behandling, som kan under støtte udbyttet af samtalen.",
             "price": "500 kr",
             "time": "60 min",
-            "image": "/assets/vector/1.svg"
+            "image": "/assets/vector/1.svg",
+            "textOrder": "order-xs-2 order-md-1",
+            "imgOrder": "order-xs-1 order-md-2"
         },
         {
             "behandlingId": 2,
-            "name": "Coachende samtaler + NADA",
+            "name": "Coachende samtaler ",
+            "subtitle": "+ NADA",
             "description": "Samtidig med den coachende samtale tilbydes du NADA behandling. Nada behandlinger en behandling, som kan under støtte udbyttet af samtalen.",
             "price": "550 kr",
             "time": "60 min",
-            "image": "/behandling1Img.png"
+            "image": "/assets/vector/1.svg",
+            "textOrder": "order-xs-1 order-md-2",
+            "imgOrder": "order-xs-2 order-md-1"
         },
         {
             "behandlingId": 3,
-            "name": "NADA i gruppe (ved min 4 personer)",
+            "name": "NADA i gruppe ",
+            "subtitle": "(ved min 4 personer)",
             "description": "NADA behandling kan blandt meget andet øge dit fokus, virke afslappende, afstressende, modvirke angst.",
             "price": "50 kr",
             "time": "45 min",
-            "image": "/behandling1Img.png"
+            "image": "/assets/vector/1.svg",
+            "textOrder": "order-1",
+            "imgOrder": "order-2"
         },
         {
             "behandlingId": 3,
@@ -57,7 +65,9 @@
             "description": "Ved parsamtaler kan I, som par få støtte til at arbejde med parforholdet, så i opnår en større indsigt i parforholdet og hinanden. Parsamtaler kan både være forebyggende og når der er opstået udfordringer i parforholdet.",
             "price": "850 kr",
             "time": "120 min",
-            "image": "/behandling1Img.png"
+            "image": "/assets/vector/1.svg",
+            "textOrder": "order-2",
+            "imgOrder": "order-1"
         },
         {
             "behandlingId": 4,
@@ -65,7 +75,9 @@
             "description": "Kan du får støtte til at føre samtaler med andre i dit nærtværk, det kan være både det private netværk og øvrige netværk.",
             "price": "850 kr",
             "time": "120 min",
-            "image": "/behandling1Img.png"
+            "image": "/assets/vector/1.svg",
+            "textOrder": "order-1",
+            "imgOrder": "order-2"
         }
     ],
     "footer": {

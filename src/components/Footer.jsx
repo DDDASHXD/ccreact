@@ -43,7 +43,7 @@ const Footer = () => {
                 </li>
                 <br />
                 <li className="footer__list">
-                  Adresse: <br />
+                  Adresse:
                   <a
                     href="/https://goo.gl/maps/2Xh9Z3CRwMDnqmPg7"
                     target="_blank"

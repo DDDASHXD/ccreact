@@ -2,7 +2,7 @@
   background-color: var(--secondary);
   display: flex;
   justify-content: space-evenly;
-  height: 100vh;
+  min-height: 100vh;
 
   // height: calc(100vh - var(--header-height));
   // padding: 3rem;

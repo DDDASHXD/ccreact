@@ -4,7 +4,7 @@ import Omkring from "../components/Omkring.jsx";
 import Behandlinger from "../components/Behandlinger.jsx";
 import Kontakt from "../components/Kontakt.jsx";
 import Footer from "../components/Footer.jsx";
-import Quote from "../components/Quote.jsx";
+import Quote from "../components/content/Quote.jsx";
 
 const Landing = (props) => {
   return (

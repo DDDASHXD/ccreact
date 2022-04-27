@@ -7,8 +7,8 @@ import "../style/nav.scss";
 
 const MyNav = () => {
   return (
-    <Navbar fluid="true" className="nav fixed-top p-1 " expand="lg">
-      <figure className="col-3 col-md-2 col-lg-1 ">
+    <Navbar  className="nav fluid fixed-top p-1 " expand="lg">
+      <figure className="col-3 col-md-2 col-lg-1  ps-3">
         <img src={logo} alt="Coach Kolding logo" className="w-100 " />
       </figure>
 

@@ -1,18 +1,21 @@
 import "../style/behandlinger.scss";
 import data from "../assets/text.json";
 import { Row, Col, Container } from "react-bootstrap";
+import Behandling from "./content/behandling";
 
 const Behandlinger = () => {
   return (
     <section className="behandlinger pt-md-5">
-      <Container className=" py-3">
-        <h2 className="title pb-5">Behandlinger</h2>
+      <Container className=" py-md-3">
+        <h2 className="title  pt-md-3">Behandlinger</h2>
+
         <Row
-          className="py-5  behandlinger__data justify-content-center"
+          className="py-md-5  px-3 px-md-0 behandlinger__data d-flex justify-content-center gap-5"
           xs={12}
           md={12}
         >
-          <Col md={6} className=" behandlinger__card order-xs-2 order-md-1">
+          <Behandling />
+          {/* <Col md={5} className=" behandlinger__card order-xs-2 order-md-1">
             <figcaption className="pris">
               {data.Behandlinger[0].price}
             </figcaption>
@@ -25,14 +28,20 @@ const Behandlinger = () => {
             </a>
           </Col>
 
-          <Col md={6} className=" order-xs-1 order-md-2  ">
+          <Col md={5} className=" order-xs-1 order-md-2  ">
             <figure className="behandlinger__figure">
               <img className="vector" src={data.Behandlinger[0].image} alt="" />
             </figure>
-          </Col>
+          </Col> */}
         </Row>
 
-        <Row
+        <Col className="justify-content-center d-flex">
+          {data.Behandlinger.map((behandling) => (
+            <div className="price"></div>
+          ))}
+        </Col>
+
+        {/* <Row
           className=" behandlinger__data justify-content-center gap-5"
           xs={12}
           md={7}
@@ -74,47 +83,7 @@ const Behandlinger = () => {
               </figcaption>
             </figure>
           </Col>
-        </Row>
-
-        <Row className="behandlinger__data gap-5 justify-content-center">
-          <Col xs={{ order: 2 }}>
-            <span>{data.Behandlinger[3].time}</span>
-            <h3>{data.Behandlinger[3].name}</h3>
-            <p className="muted">{data.Behandlinger[3].description}</p>
-            <a href="/">
-              Læs mere <i class="bx bx-chevron-right"></i>
-            </a>
-          </Col>
-
-          <Col xs={{ order: 1 }}>
-            <figure>
-              <img src="" alt="" />
-              <figcaption className="pris">
-                {data.Behandlinger[3].price}
-              </figcaption>
-            </figure>
-          </Col>
-        </Row>
-
-        <Row className="behandlinger__data gap-5 justify-content-center">
-          <Col xs={{ order: 1 }}>
-            <span>{data.Behandlinger[4].time}</span>
-            <h3>{data.Behandlinger[4].name}</h3>
-            <p className="muted">{data.Behandlinger[4].description}</p>
-            <a href="/">
-              Læs mere <i class="bx bx-chevron-right"></i>
-            </a>
-          </Col>
-
-          <Col xs={{ order: 2 }}>
-            <figure>
-              <img src="" alt="" />
-              <figcaption className="pris">
-                {data.Behandlinger[4].price}
-              </figcaption>
-            </figure>
-          </Col>
-        </Row>
+        </Row> */}
       </Container>
     </section>
   );

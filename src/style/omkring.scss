@@ -1,11 +1,11 @@
 .omkring {
   background-color: var(--secondary);
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 
   &__info {
     background-color: var(--form-color);
-    box-shadow: var(--inner-shadow);
+    // box-shadow: var(--inner-shadow);
     border-radius: 5px;
 
     h3 {
@@ -52,10 +52,10 @@
 
 .img-1 {
   object-fit: cover;
-  height: 235px;
+  height: 350px;
 }
 
 .img-2 {
   object-fit: cover;
-  height: 235px;
+  height: 350px;
 }
