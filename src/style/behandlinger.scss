@@ -24,6 +24,16 @@
     color: var(--font-color);
     font-size: var(--small-font-size);
   }
+
+  &__card {
+    position: relative;
+  }
+}
+
+.vector {
+  width: 800px;
+  margin: -100px;
+  
 }
 
 .pris {
@@ -34,4 +44,7 @@
   height: max-content;
   color: var(--body-color);
   font-weight: var(--font-semibold);
+  position: absolute;
+  right: 0;
+  margin-top: -1.5rem;
 }

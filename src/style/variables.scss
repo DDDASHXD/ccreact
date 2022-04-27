@@ -95,3 +95,10 @@ button {
 .muted {
   color: var(--font-color-muted);
 }
+
+.quote {
+  object-fit: cover;
+
+  height: 160px;
+  width: 1000px;
+}

@@ -33,7 +33,7 @@
             "description": "Samtidig med den coachende samtale tilbydes du NADA behandling. Nada behandlinger en behandling, som kan under støtte udbyttet af samtalen.",
             "price": "500 kr",
             "time": "60 min",
-            "image": "/behandling1Img.png"
+            "image": "/assets/vector/1.svg"
         },
         {
             "behandlingId": 2,
@@ -77,5 +77,8 @@
             "linkedin": "",
             "instagram": ""
         }
+    },
+    "quotes": {
+        "pippi": "/assets/quotes/pippi.png"
     }
 }
