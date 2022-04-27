@@ -49,7 +49,6 @@ const MyNav = () => {
       <figure className="col-3 col-md-2 col-lg-1 ">
         <img src={logo} alt="Coach Kolding logo" className="w-100 " />
       </figure>
-      <div className="a"></div>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
       <Navbar.Collapse xs={10} id="basic-navbar-nav">
