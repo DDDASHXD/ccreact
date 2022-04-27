@@ -4,7 +4,7 @@ import data from "../assets/text.json";
 
 const Omkring = () => {
   return (
-    <section className="omkring container-fluid">
+    <section className="omkring container-fluid" id="nav-omkring">
       <Row className="p-md-2 d-flex ">
         <Col xs={5} md={5} lg={3} className="p-4 omkring__info">
           <figure>

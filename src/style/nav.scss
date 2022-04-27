@@ -6,15 +6,87 @@
 
   height: var(--header-height);
 
+  transition: background 0.25s ease;
+
+  &.scrolled {
+    background: white;
+  }
+
   ul {
     display: flex;
     gap: 3rem;
     margin: 1rem;
+
+    &:hover {
+      li.current a {
+        color: var(--font-color-muted);
+      }
+
+      li.current::after {
+        opacity: 0;
+        // width: 0;
+        // left: 0;
+      }
+
+      li.current:hover {
+        a {
+          color: var(--primary);
+        }
+
+        &::after {
+          background: var(--primary);
+          opacity: 1;
+          width: 100%;
+          right: 0;
+        }
+      }
+    }
+
+    li {
+      position: relative;
+
+      &.current {
+        a {
+          color: var(--primary);
+        }
+
+        &::after {
+          opacity: 1;
+          width: 100%;
+          left: 0;
+        }
+      }
+
+      &:hover {
+        a {
+          color: var(--primary);
+        }
+
+        &::after {
+          opacity: 1;
+          width: 100%;
+          left: 0;
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 1px;
+        background: var(--primary);
+        opacity: 0;
+        transition: all 0.25s ease;
+      }
+    }
   }
 
   a {
     color: var(--font-color-muted);
     font-weight: var(--font-semibold);
+    transition: color 0.25s ease;
   }
 
   &__btn {

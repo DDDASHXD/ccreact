@@ -16,7 +16,7 @@ const Kontakt = () => {
   console.log(errors);
 
   return (
-    <Container fluid className="kontakt p-md-5">
+    <section fluid className="kontakt p-md-5 section" id="nav-kontakt">
       <Row className="justify-contet-center pt-md-5">
         <h2 className="title text-xs-center text-md-center">Kontakt</h2>
         <Col xs={12} md={6} className="kontakt__container ">
@@ -131,7 +131,7 @@ const Kontakt = () => {
           ></Iframe>
         </Col>
       </Row>
-    </Container>
+    </section>
   );
 };
 export default Kontakt;

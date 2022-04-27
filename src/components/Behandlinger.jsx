@@ -4,7 +4,7 @@ import { Row, Col, Container } from "react-bootstrap";
 
 const Behandlinger = () => {
   return (
-    <section className="behandlinger pt-md-5">
+    <section className="behandlinger pt-md-5 section" id="nav-behandlinger">
       <Container className=" py-3">
         <h2 className="title pb-5">Behandlinger</h2>
         <Row
