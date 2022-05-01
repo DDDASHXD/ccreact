@@ -3,6 +3,7 @@ import { Row, Col, Image } from "react-bootstrap";
 import data from "../assets/text.json";
 
 const Omkring = () => {
+
   return (
     <section className="omkring container-fluid p-0 pt-md-5" id="nav-omkring">
       <Row className="d-flex p-md-5 p-0 px-3 px-md-0">

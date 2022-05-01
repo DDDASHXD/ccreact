@@ -9,9 +9,8 @@ const Behandlinger = () => {
       <Container className=" py-md-3">
         <h2 className="title pt-md-3">Behandlinger</h2>
         <Row
-          className="py-md-5  px-3 px-md-0 behandlinger__data d-flex justify-content-center gap-5"
-          xs={12}
-          md={12}
+          className="py-md-5  px-3 px-md-0 behandlinger__data d-flex justify-content-center "
+    
         >
           <Behandling />
           {/* <Col md={5} className=" behandlinger__card order-xs-2 order-md-1">
