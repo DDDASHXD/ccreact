@@ -1,6 +1,7 @@
 import { Navbar, Row, Col } from "react-bootstrap";
 import logo from "../assets/logo.svg";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import "../style/nav.scss";
 // import { Navbar, Container } from "react-bootstrap";
@@ -42,13 +43,13 @@ const MyNav = () => {
 
   return (
     <Navbar
-      className={`nav fluid fixed-top p-1 ${scrolled ? "scrolled" : ""}`}
+      fluid="true"
+      className={`nav fixed-top p1 ${scrolled ? "scrolled" : ""}`}
       expand="lg"
     >
-      <figure className="col-3 col-md-2 col-lg-1 ps-3">
+      <figure className="col-3 col-md-2 col-lg-1 ">
         <img src={logo} alt="Coach Kolding logo" className="w-100 " />
       </figure>
-
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
       <Navbar.Collapse xs={10} id="basic-navbar-nav">
@@ -73,7 +74,9 @@ const MyNav = () => {
         </nav>
 
         <Col className="col-2 d-flex justify-content-center">
-          <button className="nav__btn">Bestil tid</button>
+          <Link to="/bestilling">
+            <button className="nav__btn">Bestil tid</button>
+          </Link>
         </Col>
       </Navbar.Collapse>
     </Navbar>

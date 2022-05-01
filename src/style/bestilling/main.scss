@@ -1,0 +1,48 @@
+.bestilling-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+
+    .section {
+        height: 100%;
+        min-height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+// .treatment {
+//     background: red;
+// }
+
+// .date {
+//     background: green;
+// }
+
+// .info {
+//     background: blue;
+// }
+
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        padding: 10px;
+    }
+}
+    
