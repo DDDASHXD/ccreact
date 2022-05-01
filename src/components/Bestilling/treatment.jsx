@@ -8,11 +8,9 @@ const Treatment = (props) => {
     <section className="treatment section">
       <Title order={3}>Behandling</Title>
       <div className="content">
-        {data.Behandlinger.map((b) => {
-          <div className="card">
-            <Title order={3}>{b.name}</Title>
-          </div>;
-        })}
+        {data.Behandlinger.map((item, index) => (
+          <p>{item.name}</p>
+        ))}
       </div>
     </section>
   );

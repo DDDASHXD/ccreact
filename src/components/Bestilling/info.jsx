@@ -4,7 +4,7 @@ import { Title } from "@mantine/core";
 const Info = (props) => {
   return (
     <section className="info section">
-      <Title order={3}>Information</Title>;
+      <Title order={3}>Information</Title>
     </section>
   );
 };
