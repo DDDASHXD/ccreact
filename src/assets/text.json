@@ -28,7 +28,7 @@
     },
     "Behandlinger": [
         {
-            "id": 1,
+            "behandlingId": 0,
             "name": "Coachende samtaler",
             "description": "Samtidig med den coachende samtale tilbydes du NADA behandling. Nada behandlinger en behandling, som kan under støtte udbyttet af samtalen.",
             "price": "500 kr",
@@ -38,7 +38,7 @@
             "imgOrder": "order-xs-1 order-md-2"
         },
         {
-            "behandlingId": 2,
+            "behandlingId": 1,
             "name": "Coachende samtaler ",
             "subtitle": "+ NADA",
             "description": "Samtidig med den coachende samtale tilbydes du NADA behandling. Nada behandlinger en behandling, som kan under støtte udbyttet af samtalen.",
@@ -49,7 +49,7 @@
             "imgOrder": "order-xs-2 order-md-1"
         },
         {
-            "behandlingId": 3,
+            "behandlingId": 2,
             "name": "NADA i gruppe ",
             "subtitle": "(ved min 4 personer)",
             "description": "NADA behandling kan blandt meget andet øge dit fokus, virke afslappende, afstressende, modvirke angst.",
