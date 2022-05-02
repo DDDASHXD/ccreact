@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { ScrollArea, Title } from "@mantine/core";
 import "../style/bestilling/main.scss";
 
@@ -7,6 +7,9 @@ import Info from "../components/Bestilling/info";
 import Treatment from "../components/Bestilling/treatment";
 
 const Bestilling = () => {
+  useEffect(() => {
+    console.log("kms");
+  }, []);
   return (
     <ScrollArea>
       <div className="bestilling-wrapper">
