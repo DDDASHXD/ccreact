@@ -5,7 +5,7 @@ const Behandling = () => {
   return (
     <>
       {data.Behandlinger.map((item, index) => (
-        <Row id="card" key={item.id} className="py-md-5 bg-secondary">
+        <Row id="card" key={item.id} className="py-md-5">
           <Col xs={12} md={6} className={"pt-md-5 " + item.textOrder}>
             <span>{item.time}</span>
             <div className="d-flex gap-3">
