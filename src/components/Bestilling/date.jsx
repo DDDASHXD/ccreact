@@ -12,6 +12,7 @@ let datesTaken = [
 
 const getAvaliableTimes = () => {
   let times = [];
+  times.push("Vælg en tid");
   for (let i = 9; i < 17; i++) {
     times.push(`${i}:00`);
   }
@@ -20,7 +21,7 @@ const getAvaliableTimes = () => {
 
 const Date = (props) => {
   const [value, setValue] = useState(null);
-  const [selectedDay, setSelectedDay] = useState(null);
+  const [timeValue, setTimeValue] = useState(null);
 
   return (
     <section className="date section">
@@ -51,18 +52,21 @@ const Date = (props) => {
                 item.year === date.getFullYear()
             )
           }
+          dayStyle={{ backgroundColor: "red", color: "white" }}
           className="calendar"
         />
       </div>
 
       <NativeSelect
         data={getAvaliableTimes()}
-        placeholder="Pick one"
+        placeholder="Vælg tid"
         label="Hvornår vil du have behandlingen?"
         description="Vælg en tid"
+        onChange={(event) => setTimeValue(event.currentTarget.value)}
         required
       />
       <button onClick={() => console.log(value.getFullYear())}>aaa</button>
+      <button onClick={() => console.log(timeValue)}>bbb</button>
     </section>
   );
 };

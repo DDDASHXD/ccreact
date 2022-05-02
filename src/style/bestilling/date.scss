@@ -9,3 +9,12 @@
         margin-bottom: 15px;
     }
 }
+
+.mantine-Calendar-selected {
+    background-color: var(--primary)!important;
+}
+
+
+.mantine-Calendar-day:disabled {
+    color: red!important;
+}
