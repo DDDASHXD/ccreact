@@ -78,6 +78,16 @@
             "image": "/assets/vector/1.svg",
             "textOrder": "order-1",
             "imgOrder": "order-2"
+        },
+        {
+            "behandlingId": 5,
+            "name": "Online coaching",
+            "description": "Kan du får støtte til at føre samtaler med andre i dit nærtværk, det kan være både det private netværk og øvrige netværk.",
+            "price": "450 kr",
+            "time": "60 min",
+            "image": "/assets/vector/1.svg",
+            "textOrder": "order-2",
+            "imgOrder": "order-1"
         }
     ],
     "footer": {
