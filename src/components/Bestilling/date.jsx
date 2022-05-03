@@ -1,20 +1,31 @@
 import React, { useState, useeffect } from "react";
-import { Title, NativeSelect, Text } from "@mantine/core";
+import { Title, NativeSelect, Text, Select, Indicator } from "@mantine/core";
 import { Calendar } from "@mantine/dates";
+import { Clock } from "tabler-icons-react";
+import "dayjs/locale/da";
 import "react-modern-calendar-datepicker/lib/DatePicker.css";
 import "../../style/bestilling/date.scss";
 
 let datesTaken = [
-  { date: 4, month: 4, year: 2022 },
-  { date: 26, month: 5, year: 2022 },
-  { date: 26, month: 5, year: 2023 },
+  { date: 4, month: 4, year: 2022, timesTaken: [12, 15, 10] },
+  { date: 26, month: 5, year: 2022, timesTaken: [12, 15, 10] },
+  { date: 26, month: 5, year: 2023, timesTaken: [12, 15, 10] },
+  { date: 25, month: 4, year: 2022, timesTaken: [12, 15, 10] },
+  { date: 13, month: 4, year: 2022, timesTaken: [12, 10] },
 ];
 
-const getAvaliableTimes = () => {
+const getAvaliableTimes = (date, month, year) => {
   let times = [];
-  times.push("Vælg en tid");
   for (let i = 9; i < 17; i++) {
-    times.push(`${i}:00`);
+    let disabled = false;
+    datesTaken.forEach((item) => {
+      if (item.date === date && item.month === month && item.year === year) {
+        if (item.timesTaken.includes(i)) {
+          disabled = true;
+        }
+      }
+    });
+    times.push({ value: i, label: `${i}:00`, disabled: disabled });
   }
   return times;
 };
@@ -26,47 +37,45 @@ const Date = (props) => {
   return (
     <section className="date section">
       <Title order={3}>Dato</Title>
-      {/* <Calendar
-        value={value}
-        onChange={setValue}
-        excludeDate={(date) => {
-          date.getDay() === 0 || date.getDay() === 6;
-          datesTaken.find(
-            (item) =>
-              item.date === date.getDate() && item.month === date.getMonth()
-          );
-        }}
-      /> */}
       <div className="dateSelect">
         <Text>Vælg dag på måneden</Text>
         <Calendar
-          value={value}
-          onChange={setValue}
-          excludeDate={(date) =>
-            date.getDay() === 0 ||
-            date.getDay() === 6 ||
-            datesTaken.find(
-              (item) =>
-                item.date === date.getDate() &&
-                item.month === date.getMonth() &&
-                item.year === date.getFullYear()
-            )
-          }
-          dayStyle={{ backgroundColor: "red", color: "white" }}
+          size="lg"
+          value={props.formDate}
+          onChange={props.setFormDate}
+          // excludeDate={(date) =>
+          //   datesTaken.find(
+          //     (item) =>
+          //       item.date === date.getDate() &&
+          //       item.month === date.getMonth() &&
+          //       item.year === date.getFullYear()
+          //   )
+          // }
+          hideOutsideDates={true}
           className="calendar"
+          locale="da"
         />
       </div>
-
-      <NativeSelect
-        data={getAvaliableTimes()}
-        placeholder="Vælg tid"
-        label="Hvornår vil du have behandlingen?"
-        description="Vælg en tid"
-        onChange={(event) => setTimeValue(event.currentTarget.value)}
-        required
+      <Select
+        label="Hilken tid vil du have behandlingen?"
+        description="De grå tider, er allerede optaget."
+        placeholder="Vælg en tid"
+        data={
+          props.formDate === null
+            ? []
+            : getAvaliableTimes(
+                props.formDate.getDate(),
+                props.formDate.getMonth(),
+                props.formDate.getFullYear()
+              )
+        }
+        size="md"
+        className="timeSelect"
+        icon={<Clock size={16} />}
+        onChange={setTimeValue}
+        error={props.formDate == null ? (true, "Vælg dato først") : false}
+        disabled={props.formDate == null ? true : false}
       />
-      <button onClick={() => console.log(value.getFullYear())}>aaa</button>
-      <button onClick={() => console.log(timeValue)}>bbb</button>
     </section>
   );
 };

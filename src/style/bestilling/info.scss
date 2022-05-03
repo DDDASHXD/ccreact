@@ -1,0 +1,15 @@
+// .input {
+//     div{
+//         input:not(:placeholder-shown) {
+//             border-color: var(--primary)!important;
+//         }
+//     }
+// }
+
+.infoForm {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+

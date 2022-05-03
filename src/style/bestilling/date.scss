@@ -10,11 +10,25 @@
     }
 }
 
+.timeSelect {
+    width: 57%;
+}
+
 .mantine-Calendar-selected {
     background-color: var(--primary)!important;
 }
 
+.mantine-Calendar-yearPickerControlActive {
+    background-color: var(--primary)!important;
+    color: white!important;
+}
+
+.mantine-Calendar-monthPickerControlActive {
+    background-color: var(--primary)!important;
+    color: white!important;
+}
+
 
 .mantine-Calendar-day:disabled {
-    color: red!important;
+    color: rgb(216, 216, 216)!important;
 }
