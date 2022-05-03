@@ -1,5 +1,6 @@
 import "../style/footer.scss";
 import { Col, Row } from "react-bootstrap";
+import data from "../assets/text.json";
 
 const Footer = () => {
   return (
@@ -8,27 +9,21 @@ const Footer = () => {
         <Col md={4} className="">
           <Row className="  text-center">
             <span>Just Div</span>
-            <h2 className="title">Website Creators</h2>
+            <h2 className="title">{data.footer.justdiv.title}</h2>
             <Col className="px-5">
               {" "}
-              <p>
-                Hjemmesiden er lavet af et lille selvstartet web firma ved navn JustDiv
-                betånde af 2 personer. Julie er front end designer og developer og Sebastian er backend developer og har
-                <br class="d-none d-md-block" />
-                JustDiv laver hjemmesider og grafisk design til alle slags
-                virksomheder.
-              </p>
+              <p>{data.footer.justdiv.text}</p>
               <p>Sebastian Skov NIelsen & Julie Boeriis Thomhav</p>
             </Col>{" "}
             <Col
               xs={12}
               className=" footer__icons d-flex justify-content-center gap-1"
             >
-              <i className="bx bx-linkedin"></i>
-              <i className="bx bx-facebook"></i>
-              <i className="bx bx-linkedin"></i>
-              <i className="bx bx-linkedin"></i>
-              <i className="bx bx-linkedin"></i>
+              {data.footer.justdiv.social.map((item, index) => (
+                <a href={item.href}>
+                  <i className={"bx " + item.class}></i>
+                </a>
+              ))}
             </Col>
           </Row>
         </Col>
