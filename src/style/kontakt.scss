@@ -60,7 +60,7 @@
   // display: flex;
   // flex-direction: column;
 
-  input,
+  .input,
   .text-area {
     background-color: var(--form-color);
     border: 0;
@@ -79,6 +79,7 @@
 
   &__btn {
     background-color: var(--font-color);
+    color: var(--body-color);
   }
 }
 

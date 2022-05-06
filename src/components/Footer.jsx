@@ -1,20 +1,30 @@
 import "../style/footer.scss";
 import { Col, Row } from "react-bootstrap";
+import data from "../assets/text.json";
 
 const Footer = () => {
   return (
     <footer className="footer container-fluid p-0">
       <Row className="p-5 ">
         <Col md={4} className="">
-          <Row className=" d-flex justify-content-center text-center">
-            <h2 className="title">Website Creators</h2>
-            <div className="footer__icons d-flex justify-content-center gap-1">
-              <i className="bx bx-linkedin"></i>
-              <i className="bx bx-facebook"></i>
-              <i className="bx bx-linkedin"></i>
-              <i className="bx bx-linkedin"></i>
-              <i className="bx bx-linkedin"></i>
-            </div>
+          <Row className="  text-center">
+            <span>Just Div</span>
+            <h2 className="title">{data.footer.justdiv.title}</h2>
+            <Col className="px-5">
+              {" "}
+              <p>{data.footer.justdiv.text}</p>
+              <p>Sebastian Skov NIelsen & Julie Boeriis Thomhav</p>
+            </Col>{" "}
+            <Col
+              xs={12}
+              className=" footer__icons d-flex justify-content-center gap-1"
+            >
+              {data.footer.justdiv.social.map((item, index) => (
+                <a href={item.href}>
+                  <i className={"bx " + item.class}></i>
+                </a>
+              ))}
+            </Col>
           </Row>
         </Col>
 
@@ -46,7 +56,7 @@ const Footer = () => {
                   Adresse:
                   <a
                     href="/https://goo.gl/maps/2Xh9Z3CRwMDnqmPg7"
-                    target="_blank"
+                    target="_blank" rel="noopener noreferrer"
                   >
                     Grydhøj 16, 6000 Kolding
                   </a>
@@ -60,7 +70,7 @@ const Footer = () => {
               <ul>
                 <li className="footer__list">
                   <a
-                    className="footer__link"
+                    className="footer__link" target="_blank" rel="noopener noreferrer"
                     href="https://nada-danmark.dk/netvaerk-og-behandling/behandlernetvaerk/"
                   >
                     Nada - Danmark
@@ -71,7 +81,7 @@ const Footer = () => {
                 </li>
                 <li className="footer__list">
                   <a
-                    className="footer__link"
+                    className="footer__link" target="_blank" rel="noopener noreferrer"
                     href="https://nlphuset.dk/?gclid=Cj0KCQjwiNSLBhCPARIsAKNS4_fBA4zSqv9zIun89VW9gSeHsIPOv1rAGwCZVaGB5sQCYOzLRGwtszYaApkZEALw_wcB "
                   >
                     Npl Huset

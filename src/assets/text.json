@@ -78,16 +78,48 @@
             "image": "/assets/vector/1.svg",
             "textOrder": "order-1",
             "imgOrder": "order-2"
+        },
+        {
+            "behandlingId": 5,
+            "name": "Online coaching",
+            "description": "Kan du får støtte til at føre samtaler med andre i dit nærtværk, det kan være både det private netværk og øvrige netværk.",
+            "price": "450 kr",
+            "time": "60 min",
+            "image": "/assets/vector/1.svg",
+            "textOrder": "order-2",
+            "imgOrder": "order-1"
         }
     ],
     "footer": {
         "justdiv": {
+            "social": [
+                {
+                    "id": "facebook",
+                    "href": "",
+                    "class": "bx-facebook"
+                },
+                {
+                    "id": "linkedin",
+                    "href": "",
+                    "class": "bx-facebook"
+                },
+                {
+                    "id": "instagram",
+                    "href": "",
+                    "class": "bx-facebook"
+                },
+                {
+                    "href": "",
+                    "class": "bx-facebook"
+                },
+                {
+                    "href": "",
+                    "class": "bx-facebook"
+                }
+            ],
             "title": "Website Creators",
             "name": "JustDiv",
-            "text": "We are a small buisness of 2 people. A frontend developer / graphic designer, Julie Boeriis Thomhav(jbt.graphics). A backend developer, Sebastian Skov Nielsen(DashXD). ",
-            "facebook": "",
-            "linkedin": "",
-            "instagram": ""
+            "text": "Hjemmesiden er lavet af et lille selvstartet web firma(Just Div) betånde af 2 personer. En frontend developer / graphic designer, Julie Boeriis Thomhav(jbt.graphics) og backend developer, Sebastian Skov Nielsen(DashXD).JustDiv laver hjemmesider og grafisk design til alle slags virksomheder, bare kontakt os hvis du er interasseret."
         }
     },
     "quotes": {
