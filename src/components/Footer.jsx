@@ -56,7 +56,7 @@ const Footer = () => {
                   Adresse:
                   <a
                     href="/https://goo.gl/maps/2Xh9Z3CRwMDnqmPg7"
-                    target="_blank"
+                    target="_blank" rel="noopener noreferrer"
                   >
                     Grydhøj 16, 6000 Kolding
                   </a>
@@ -70,7 +70,7 @@ const Footer = () => {
               <ul>
                 <li className="footer__list">
                   <a
-                    className="footer__link"
+                    className="footer__link" target="_blank" rel="noopener noreferrer"
                     href="https://nada-danmark.dk/netvaerk-og-behandling/behandlernetvaerk/"
                   >
                     Nada - Danmark
@@ -81,7 +81,7 @@ const Footer = () => {
                 </li>
                 <li className="footer__list">
                   <a
-                    className="footer__link"
+                    className="footer__link" target="_blank" rel="noopener noreferrer"
                     href="https://nlphuset.dk/?gclid=Cj0KCQjwiNSLBhCPARIsAKNS4_fBA4zSqv9zIun89VW9gSeHsIPOv1rAGwCZVaGB5sQCYOzLRGwtszYaApkZEALw_wcB "
                   >
                     Npl Huset
