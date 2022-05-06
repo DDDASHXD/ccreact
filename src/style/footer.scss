@@ -1,13 +1,24 @@
+@import url("https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css");
+
 .footer {
   background-color: var(--secondary);
   width: 100%;
+
+  &__hr {
+    color: var(--primary);
+    opacity: 1;
+
+    &--long {
+      width: 5px;
+    }
+  }
 
   &__icons {
     height: max-content;
 
     i {
       padding: 1rem;
-      color: var(--font-color);
+      color: var(--secondary);
       background-color: var(--form-color);
       border-radius: 50px;
     }
@@ -16,6 +27,14 @@
   &__list {
     list-style: disc !important;
     color: var(--dark);
+  }
+  &__a {
+    color: var(--font-color);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--primary);
+    }
   }
   &__link {
     color: var(--dark);

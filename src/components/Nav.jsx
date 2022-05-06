@@ -1,4 +1,4 @@
-import { Navbar, Row, Col } from "react-bootstrap";
+import { Navbar, Col } from "react-bootstrap";
 import logo from "../assets/logo.svg";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -56,11 +56,11 @@ const MyNav = () => {
         <nav className="col-10 pe-md-5">
           <ul className="justify-content-end">
             <li className="navlink nav-hjem">
-              <a href="/">Hjem</a>
+              <a href="#omkring">Hjem</a>
             </li>
 
             <li className="navlink nav-omkring">
-              <a href="/">omkring</a>
+              <a href="#nav-omkring">omkring</a>
             </li>
 
             <li className="navlink nav-behandlinger">

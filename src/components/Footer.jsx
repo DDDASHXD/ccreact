@@ -6,15 +6,15 @@ const Footer = () => {
   return (
     <footer className="footer container-fluid p-0">
       <Row className="p-5 ">
-        <Col md={4} className="">
-          <Row className="  text-center">
-            <span>Just Div</span>
+        <Col md={6} className="">
+          <Row className=" text-center">
+
             <h2 className="title">{data.footer.justdiv.title}</h2>
+
+            <hr className="footer__hr--long" />
             <Col className="px-5">
-              {" "}
               <p>{data.footer.justdiv.text}</p>
-              <p>Sebastian Skov NIelsen & Julie Boeriis Thomhav</p>
-            </Col>{" "}
+            </Col>
             <Col
               xs={12}
               className=" footer__icons d-flex justify-content-center gap-1"
@@ -22,43 +22,43 @@ const Footer = () => {
               {data.footer.justdiv.social.map((item, index) => (
                 <a href={item.href}>
                   <i className={"bx " + item.class}></i>
+
                 </a>
               ))}
             </Col>
           </Row>
         </Col>
 
-        <Col md={8}>
+        <Col md={6}>
           <Row className="d-flex justify-content-end gap-5">
             <Col md={5}>
               <h3>Firma oplysninger</h3>
-              <hr />
+              <hr className="footer__hr" />
               <ul>
                 <li className="footer__list">
-                  <a
+                  <a className="footer__a"
                     target="_blank"
                     href="/https://datacvr.virk.dk/enhed/virksomhed/36324465?fritekst=36324465&sideIndex=0&size=10"
                   >
-                    CVR-nr.: <br /> 36 32 44 65
+                    CVR-nr.:  36 32 44 65
                   </a>
                 </li>
                 <br />
                 <li className="footer__list">
-                  Betaling: <br /> over MobilePay
+                  Betaling: over MobilePay
                 </li>
                 <br />
                 <li className="footer__list">
-                  Tlf: <br />
-                  <a href="tel:+4532701494">32 70 14 94</a>
+
+                  <a href="tel:+4532701494" className="footer__a"> Tlf: 32 70 14 94</a>
                 </li>
                 <br />
                 <li className="footer__list">
-                  Adresse:
-                  <a
+                  <a className="footer__a"
                     href="/https://goo.gl/maps/2Xh9Z3CRwMDnqmPg7"
                     target="_blank" rel="noopener noreferrer"
                   >
-                    Grydhøj 16, 6000 Kolding
+                    Adresse:    Grydhøj 16, <br /> 6000 Kolding
                   </a>
                 </li>
               </ul>
@@ -66,11 +66,11 @@ const Footer = () => {
 
             <Col md={5} className="">
               <h3>Andre muligheder</h3>
-              <hr />
+              <hr className="footer__hr" />
               <ul>
                 <li className="footer__list">
                   <a
-                    className="footer__link" target="_blank" rel="noopener noreferrer"
+                    className="footer__link footer__a" target="_blank" rel="noopener noreferrer"
                     href="https://nada-danmark.dk/netvaerk-og-behandling/behandlernetvaerk/"
                   >
                     Nada - Danmark
@@ -81,7 +81,7 @@ const Footer = () => {
                 </li>
                 <li className="footer__list">
                   <a
-                    className="footer__link" target="_blank" rel="noopener noreferrer"
+                    className="footer__link footer__a" target="_blank" rel="noopener noreferrer"
                     href="https://nlphuset.dk/?gclid=Cj0KCQjwiNSLBhCPARIsAKNS4_fBA4zSqv9zIun89VW9gSeHsIPOv1rAGwCZVaGB5sQCYOzLRGwtszYaApkZEALw_wcB "
                   >
                     Npl Huset

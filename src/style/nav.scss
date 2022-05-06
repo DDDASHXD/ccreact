@@ -21,6 +21,7 @@
     &:hover {
       li.current a {
         color: var(--font-color-muted);
+        text-decoration: none;
       }
 
       li.current::after {
@@ -88,6 +89,7 @@
     color: var(--font-color-muted);
     font-weight: var(--font-semibold);
     transition: color 0.25s ease;
+    text-decoration: none;
   }
 
   &__btn {

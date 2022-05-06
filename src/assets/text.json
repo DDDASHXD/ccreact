@@ -96,25 +96,25 @@
                 {
                     "id": "facebook",
                     "href": "",
-                    "class": "bx-facebook"
+                    "class": "bxl-facebook"
                 },
                 {
                     "id": "linkedin",
                     "href": "",
-                    "class": "bx-facebook"
+                    "class": "bxl-facebook"
                 },
                 {
                     "id": "instagram",
                     "href": "",
-                    "class": "bx-facebook"
+                    "class": "bxl-facebook"
                 },
                 {
                     "href": "",
-                    "class": "bx-facebook"
+                    "class": "bxl-facebook"
                 },
                 {
                     "href": "",
-                    "class": "bx-facebook"
+                    "class": "bxl-facebook"
                 }
             ],
             "title": "Website Creators",
