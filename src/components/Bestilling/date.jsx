@@ -3,7 +3,6 @@ import { Title, NativeSelect, Text, Select, Indicator } from "@mantine/core";
 import { Calendar } from "@mantine/dates";
 import { Clock } from "tabler-icons-react";
 import "dayjs/locale/da";
-import "react-modern-calendar-datepicker/lib/DatePicker.css";
 import "../../style/bestilling/date.scss";
 
 let datesTaken = [
@@ -64,10 +63,10 @@ const Date = (props) => {
           props.formDate === null
             ? []
             : getAvaliableTimes(
-                props.formDate.getDate(),
-                props.formDate.getMonth(),
-                props.formDate.getFullYear()
-              )
+              props.formDate.getDate(),
+              props.formDate.getMonth(),
+              props.formDate.getFullYear()
+            )
         }
         size="md"
         className="timeSelect"

@@ -13,7 +13,7 @@ const Footer = () => {
 
             <hr className="footer__hr--long" />
             <Col className="px-5">
-              <p>{data.footer.justdiv.text}</p>
+              <p>{data.footer.justdiv.websiteInfo}</p>
             </Col>
             <Col
               xs={12}

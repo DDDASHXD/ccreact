@@ -119,7 +119,8 @@
             ],
             "title": "Website Creators",
             "name": "JustDiv",
-            "text": "Hjemmesiden er lavet af et lille selvstartet web firma(Just Div) betånde af 2 personer. En frontend developer / graphic designer, Julie Boeriis Thomhav(jbt.graphics) og backend developer, Sebastian Skov Nielsen(DashXD).JustDiv laver hjemmesider og grafisk design til alle slags virksomheder, bare kontakt os hvis du er interasseret."
+            "websiteInfo": "Hjemmesiden er lavet af et lille selvstartet web firma(Just Div) betånde af 2 personer. En frontend developer / graphic designer, Julie Boeriis Thomhav(jbt.graphics) og backend developer, Sebastian Skov Nielsen(DashXD).",
+            "justdivInfo":"JustDiv laver hjemmesider og grafisk design til alle slags virksomheder, bare kontakt os hvis du er interasseret."
         }
     },
     "quotes": {
