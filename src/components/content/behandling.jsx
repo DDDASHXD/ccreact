@@ -19,7 +19,7 @@ const Behandling = () => {
             </div>
 
             <p className="muted">{item.description}</p>
-            <a href="/">
+            <a href="/bestilling">
               bestil tid <i class="bx bx-chevron-right"></i>
             </a>
           </Col>

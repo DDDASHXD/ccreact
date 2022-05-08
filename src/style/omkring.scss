@@ -42,6 +42,13 @@
     line-height: 0.5rem;
     text-align: start;
   }
+
+  &__lene {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
+  }
 }
 
 .img-1 {

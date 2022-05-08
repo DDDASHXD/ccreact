@@ -47,10 +47,10 @@ const MyNav = () => {
       className={`nav fixed-top p1 ${scrolled ? "scrolled" : ""}`}
       expand="lg"
     >
-      <figure className="col-3 col-md-2 col-lg-1 ">
-        <img src={logo} alt="Coach Kolding logo" className="w-100 " />
+      <figure className="col-3 col-md-2 col-lg-2 p-md-5">
+        <img src={logo} alt="Coach Kolding " className="w-100 " />
       </figure>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Toggle className="border-0 pe-2" aria-controls="basic-navbar-nav" />
 
       <Navbar.Collapse xs={10} id="basic-navbar-nav">
         <nav className="col-10 pe-md-5">
@@ -73,10 +73,10 @@ const MyNav = () => {
           </ul>
         </nav>
 
-        <Col className="col-2 d-flex justify-content-center">
-          <Link to="/bestilling">
-            <button className="nav__btn">Bestil tid</button>
-          </Link>
+        <Col className=" col-2 d-flex justify-content-center">
+          <a target="_blank" className="nav__btn" href="#bestilling">
+            Bestil tid
+          </a>
         </Col>
       </Navbar.Collapse>
     </Navbar>

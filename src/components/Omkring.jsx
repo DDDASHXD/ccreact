@@ -6,25 +6,29 @@ const Omkring = () => {
 
   return (
     <section className="omkring container-fluid p-0 pt-md-5" id="nav-omkring">
-      <Row className="d-flex p-md-5 p-0 px-3 px-md-0">
-        <Col xs={12} md={5} lg={3} className="p-md-4 omkring__info pt-3">
-          <row>
-            <figure className="col-6 col-md-12">
+      <Row className="d-flex p-0 p-0  px-md-0">
+        <Col xs={12} md={5} lg={3} className="p-0 omkring__info pt-3">
+          <aside className="omkring__lene">
+
+            <figure className="">
               <Image
                 fluid
                 src={data.omkring["lene-img"]}
                 alt="Portrat billede af Lene Thomhav"
               />
             </figure>
-            <h3>{data.omkring.title}</h3>
+
+
             <div className="omkring__list">
+              <h3>{data.omkring.title}</h3>
               {data.omkring.erfaring.map((item) => (
                 <ul>
                   <li>{item}</li>
                 </ul>
               ))}
             </div>
-          </row>
+
+          </aside>
         </Col>
 
         <Col xs={12} md={7} lg={9} className="p-0 p-md-5">

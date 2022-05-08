@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../../style/kontakt.scss"
+import { Col, Row } from "react-bootstrap";
 
 const FORM_ENDPOINT = ""; // TODO - fill on the later step
 
@@ -26,65 +27,73 @@ const ContactForm = () => {
             method="POST"
             target="_blank"
         >
-            <div className="mb-3 pt-0">
-                <input
-                    type="text"
-                    placeholder="Your name"
-                    name="firstName"
-                    className="input "
-                    required
-                />
-            </div>
-            <div className="mb-3 pt-0">
-                <input
-                    type="text"
-                    placeholder="Your name"
-                    name="lastName"
-                    className="input "
-                    required
-                />
-            </div>
-            <div className="mb-3 pt-0">
-                <input
-                    type="email"
-                    placeholder="Email"
-                    name="email"
-                    className="input"
-                    required
-                    pattern="/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}
-                        [a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/"
-                />
-            </div>
-            <div className="mb-3 pt-0">
-                <label htmlFor=""></label>
-                <input
 
-                    type="number"
-                    placeholder="tel"
-                    className="input"
-                    required
-                    id="phone"
-                    name="phone"
-                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-                />
-            </div>
-            <div className="mb-3 pt-0">
+            <Row className=" gap-1 ">
+                <Col xs={5} className="mb-3 pt-0">
+                    <label className="form__label">Fornavn</label>
+                    <input
+                        type="text"
+
+                        name="firstName"
+                        className="form__input"
+                        required
+                    />
+                </Col>
+                <Col xs={5} className="mb-3 pt-0">
+                    <label className="form__label">Efternavn</label>
+                    <input
+                        type="text"
+
+                        name="lastName"
+                        className="form__input"
+                        required
+                    />
+                </Col>
+            </Row>
+            <Row className="gap-1">
+                <Col xs={5} className="mb-3 pt-0">
+                    <label className="form__label">Email</label>
+                    <input
+                        type="email"
+
+                        name="email"
+                        className="form__input"
+                        required
+                        pattern="/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}
+                        [a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/"
+                    />
+                </Col>
+                <Col xs={5} className="mb-3 pt-0">
+                    <label className="form__label">Tlf nummer</label>
+                    <input
+
+                        type="number"
+
+                        className="form__input"
+                        required
+                        id="phone"
+                        name="phone"
+                        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                    />
+                </Col>
+            </Row>
+            <Col xs={10} className="mb-3 pt-0">
+                <label className="form__label">Besked</label>
                 <textarea
-                    placeholder="Your message"
+
                     name="message"
-                    className="text-area"
+                    className="form__text-area"
                     required
                 />
-            </div>
+            </Col>
             <div className="mb-3 pt-0">
-                <button
-                    className="form__btn"
-                    type="submit"
-                >
-                    Send a message
-                </button>
+                <a href="/" className="button form__btn">Send</a>
+
+
             </div>
-        </form>
+
+
+        </form >
     );
 };
 

@@ -11,7 +11,7 @@ const Footer = () => {
 
             <h2 className="title">{data.footer.justdiv.title}</h2>
 
-            <hr className="footer__hr--long" />
+
             <Col className="px-5">
               <p>{data.footer.justdiv.websiteInfo}</p>
             </Col>
