@@ -60,21 +60,21 @@ const MyNav = () => {
             </li>
 
             <li className="navlink nav-omkring">
-              <a href="#nav-omkring">omkring</a>
+              <a href="#nav-omkring">Omkring</a>
             </li>
 
             <li className="navlink nav-behandlinger">
-              <a href="/">behnadlinger</a>
+              <a href="/">Behandlinger</a>
             </li>
 
             <li className="navlink nav-kontakt">
-              <a href="/">kontakt</a>
+              <a href="/">Kontakt</a>
             </li>
           </ul>
         </nav>
 
         <Col className=" col-2 d-flex justify-content-center">
-          <a target="_blank" className="nav__btn" href="#bestilling">
+          <a target="_blank" className=" button nav__btn" href="#bestilling">
             Bestil tid
           </a>
         </Col>

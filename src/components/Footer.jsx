@@ -6,18 +6,18 @@ const Footer = () => {
   return (
     <footer className="footer container-fluid p-0">
       <Row className="p-5 ">
-        <Col md={6} className="">
+        <Col md={6}>
           <Row className=" text-center">
 
-            <h2 className="title">{data.footer.justdiv.title}</h2>
+            <h2 className="title m-0">{data.footer.justdiv.title}</h2>
 
 
-            <Col className="px-5">
-              <p>{data.footer.justdiv.websiteInfo}</p>
+            <Col className="px-5 ">
+              <p className="footer__justdiv-text px-1 muted">{data.footer.justdiv.websiteInfo}</p>
             </Col>
             <Col
               xs={12}
-              className=" footer__icons d-flex justify-content-center gap-1"
+              className=" footer__icons d-flex justify-content-center gap-3"
             >
               {data.footer.justdiv.social.map((item, index) => (
                 <a href={item.href}>
@@ -30,44 +30,44 @@ const Footer = () => {
         </Col>
 
         <Col md={6}>
-          <Row className="d-flex justify-content-end gap-5">
-            <Col md={5}>
+          <Row className="d-flex justify-content-end gap-0 text-center text-md-start">
+            <Col md={6} >
               <h3>Firma oplysninger</h3>
               <hr className="footer__hr" />
-              <ul>
+              <ul className="ps-3 pe-0">
                 <li className="footer__list">
                   <a className="footer__a"
-                    target="_blank"
-                    href="/https://datacvr.virk.dk/enhed/virksomhed/36324465?fritekst=36324465&sideIndex=0&size=10"
+                    target="_blank" rel="noreferrer"
+                    href="https://datacvr.virk.dk/enhed/virksomhed/36324465?fritekst=36324465&sideIndex=0&size=10"
                   >
-                    CVR-nr.:  36 32 44 65
+                    - CVR-nr.:  36 32 44 65
                   </a>
                 </li>
                 <br />
                 <li className="footer__list">
-                  Betaling: over MobilePay
+                  - Betaling: over MobilePay
                 </li>
                 <br />
                 <li className="footer__list">
 
-                  <a href="tel:+4532701494" className="footer__a"> Tlf: 32 70 14 94</a>
+                  <a href="tel:+4532701494" className="footer__a">- Tlf: 32 70 14 94</a>
                 </li>
                 <br />
                 <li className="footer__list">
                   <a className="footer__a"
-                    href="/https://goo.gl/maps/2Xh9Z3CRwMDnqmPg7"
-                    target="_blank" rel="noopener noreferrer"
+                    href="https://goo.gl/maps/2Xh9Z3CRwMDnqmPg7"
+                    target="_blank" rel="noreferrer"
                   >
-                    Adresse:    Grydhøj 16, <br /> 6000 Kolding
+                    <span className="px-1"> - </span> <span>Adresse: Grydhøj 16, <br /> 6000 Kolding</span>
                   </a>
                 </li>
               </ul>
             </Col>
 
-            <Col md={5} className="">
+            <Col md={6}>
               <h3>Andre muligheder</h3>
               <hr className="footer__hr" />
-              <ul>
+              <ul className="ps-3 pe-5">
                 <li className="footer__list">
                   <a
                     className="footer__link footer__a" target="_blank" rel="noopener noreferrer"
@@ -81,7 +81,7 @@ const Footer = () => {
                 </li>
                 <li className="footer__list">
                   <a
-                    className="footer__link footer__a" target="_blank" rel="noopener noreferrer"
+                    className="footer__link footer__a" target="_blank" rel="noreferrer"
                     href="https://nlphuset.dk/?gclid=Cj0KCQjwiNSLBhCPARIsAKNS4_fBA4zSqv9zIun89VW9gSeHsIPOv1rAGwCZVaGB5sQCYOzLRGwtszYaApkZEALw_wcB "
                   >
                     Npl Huset
@@ -97,8 +97,8 @@ const Footer = () => {
       </Row>
 
       <Col xs={12} className="footer__copy px-5 py-1">
-        <p>©Coach Kolding</p>
-        <p>@Just Div</p>
+        <p className="footer__muted">©Coach Kolding</p>
+        <p className="footer__muted">@Just Div</p>
       </Col>
     </footer>
   );
