@@ -47,19 +47,24 @@ const MyNav = () => {
       className={`nav fixed-top p1 ${scrolled ? "scrolled" : ""}`}
       expand="lg"
     >
-      <figure className="
+      <figure
+        className="
       col-2 p-0 m-0 ps-1
       col-sm-2  
       col-md-2 ps-md-4  pt-md-0
       col-lg-2  pt-lg-2 pe-lg-5
       col-xl-2 ps-xl-5 pt-xl-0
-      ">
+      "
+      >
         <img src={logo} alt="Coach Kolding " className="w-100 " />
       </figure>
-      <Navbar.Toggle className="border-0 pe-2 py-0 my-0 " aria-controls="basic-navbar-nav" />
+      <Navbar.Toggle
+        className="border-0 pe-2 py-0 my-0 "
+        aria-controls="basic-navbar-nav"
+      />
 
       <Navbar.Collapse xs={12} id="basic-navbar-nav">
-        <Col xs={12} className="" >
+        <Col xs={12} className="">
           <nav className="px-1 pe-md-5 nav__bg">
             <ul className="justify-content-end d-flex gap-4 gap-md-5 pt-lg-3 pb-1 pb-lg-0">
               <li className="navlink nav-hjem">
@@ -78,20 +83,23 @@ const MyNav = () => {
                 <a href="#nav-kontakt">Kontakt</a>
               </li>
               <div className="  d-flex justify-content-center d-lg-none">
-                <a target="_blank" className=" button nav__btn" href="#bestilling">
+                <a
+                  target="_blank"
+                  className=" button nav__btn"
+                  href="/bestilling"
+                >
                   Bestil tid
                 </a>
               </div>
             </ul>
-
           </nav>
         </Col>
-
-
-
       </Navbar.Collapse>
-      <Col xs={1} className=" col-2 d-flex justify-content-center d-none d-lg-block">
-        <a target="_blank" className=" button nav__btn" href="#bestilling">
+      <Col
+        xs={1}
+        className=" col-2 d-flex justify-content-center d-none d-lg-block"
+      >
+        <a target="_blank" className=" button nav__btn" href="/bestilling">
           Bestil tid
         </a>
       </Col>
