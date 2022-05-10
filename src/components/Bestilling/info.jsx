@@ -114,6 +114,10 @@ const Info = (props) => {
           className="input"
           size="md"
         />
+        <p className="preUser">
+          Har du allerede en konto?{" "}
+          <span className="formLink">Så log ind her</span>
+        </p>
       </form>
     </section>
   );
