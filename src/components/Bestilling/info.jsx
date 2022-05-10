@@ -36,7 +36,7 @@ const Info = (props) => {
         <div className="login-wrapper">
           <TextInput placeholder="john@doe.com" label="Email addresse" />
           <PasswordInput placeholder="*********" label="Adgangskode" />
-          <Button className="login-button">Log ind</Button>
+          <Button className="bestilling-button">Log ind</Button>
         </div>
       </Modal>
       <Title order={3}>Information</Title>
@@ -131,6 +131,7 @@ const Info = (props) => {
           className="input"
           size="md"
         />
+        <Button className="bestilling-button"> Send bestilling</Button>
         <p className="preUser">
           Har du allerede en konto?{" "}
           <span className="formLink" onClick={() => props.setLoginModal(true)}>

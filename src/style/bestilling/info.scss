@@ -27,14 +27,14 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
 
-    .login-button {
-        background-color: #7fa474;
-        color: white!important;
+.bestilling-button {
+    background-color: #7fa474;
+    color: white!important;
 
-        &:hover {
-            background-color: #749569;
-        }
+    &:hover {
+        background-color: #749569;
     }
 }
 
