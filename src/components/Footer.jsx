@@ -4,11 +4,11 @@ import data from "../assets/text.json";
 
 const Footer = () => {
   return (
-    <footer className="footer container-fluid p-0">
-      <Row className="p-5 ">
+    <footer className="footer section  container-fluid p-0">
+      <Row className=" p-3 p-md-5 ">
         <Col md={6}>
           <Row className=" text-center">
-
+            <span className="footer__justdiv-intro">JustDiv</span>
             <h2 className="title m-0">{data.footer.justdiv.title}</h2>
 
 
@@ -30,11 +30,11 @@ const Footer = () => {
         </Col>
 
         <Col md={6}>
-          <Row className="d-flex justify-content-end gap-0 text-center text-md-start">
-            <Col md={6} >
+          <Row className="pt-5 pt-md-0 d-flex justify-content-end gap-0 text-start text-md-start">
+            <Col xs={6} className="" >
               <h3>Firma oplysninger</h3>
               <hr className="footer__hr" />
-              <ul className="ps-3 pe-0">
+              <ul className=" p-0 ps-md-3 pe-0">
                 <li className="footer__list">
                   <a className="footer__a"
                     target="_blank" rel="noreferrer"
@@ -58,16 +58,16 @@ const Footer = () => {
                     href="https://goo.gl/maps/2Xh9Z3CRwMDnqmPg7"
                     target="_blank" rel="noreferrer"
                   >
-                    <span className="px-1"> - </span> <span>Adresse: Grydhøj 16, <br /> 6000 Kolding</span>
+                    <span> - Adresse: Grydhøj 16, <br /> 6000 Kolding</span>
                   </a>
                 </li>
               </ul>
             </Col>
 
-            <Col md={6}>
+            <Col xs={6} className="">
               <h3>Andre muligheder</h3>
               <hr className="footer__hr" />
-              <ul className="ps-3 pe-5">
+              <ul className="p-0 ps-md-3 pe-5">
                 <li className="footer__list">
                   <a
                     className="footer__link footer__a" target="_blank" rel="noopener noreferrer"

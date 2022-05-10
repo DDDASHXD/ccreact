@@ -16,7 +16,7 @@ const ContactForm = () => {
         return (
             <>
                 <div className="text-2xl">Thank you!</div>
-                <div className="text-md">We'll be in touch soon.</div>
+                <div className="mb-2 mb-sm-3">We'll be in touch soon.</div>
             </>
         );
     }
@@ -28,8 +28,8 @@ const ContactForm = () => {
             target="_blank"
         >
 
-            <Row className=" gap-1 ">
-                <Col xs={5} className="mb-3 pt-0">
+            <Row className=" gap-md-1 ">
+                <Col xs={5} className="mb-2 mb-sm-3 pt-0">
                     <label className="form__label">Fornavn</label>
                     <input
                         type="text"
@@ -39,7 +39,7 @@ const ContactForm = () => {
                         required
                     />
                 </Col>
-                <Col xs={5} className="mb-3 pt-0">
+                <Col xs={5} className="mb-2 mb-sm-3 pt-0">
                     <label className="form__label">Efternavn</label>
                     <input
                         type="text"
@@ -50,8 +50,8 @@ const ContactForm = () => {
                     />
                 </Col>
             </Row>
-            <Row className="gap-1">
-                <Col xs={5} className="mb-3 pt-0">
+            <Row className="gap-md-1">
+                <Col xs={5} className="mb-2 mb-sm-3 pt-0">
                     <label className="form__label">Email</label>
                     <input
                         type="email"
@@ -63,7 +63,7 @@ const ContactForm = () => {
                         [a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/"
                     />
                 </Col>
-                <Col xs={5} className="mb-3 pt-0">
+                <Col xs={5} className="mb-2 mb-sm-3 pt-0">
                     <label className="form__label">Tlf nummer</label>
                     <input
 
@@ -86,7 +86,7 @@ const ContactForm = () => {
                     required
                 />
             </Col>
-            <div className="mb-3 pt-0">
+            <div className="mb-3 pt-2 pt-md-0">
                 <a href="/" className="button form__btn">Send</a>
 
 

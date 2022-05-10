@@ -6,15 +6,18 @@
   height: var(--header-height);
   transition: background 0.25s ease;
 
+  &__bg {
+    transition: background 0.15s ease;
+  }
+
   &.scrolled {
-    background: white;
+    background: var(--body-color);
+    .nav__bg {
+      background: var(--body-color);
+    }
   }
 
   ul {
-    display: flex;
-    gap: 3rem;
-    margin: 1rem;
-
     &:hover {
       li.current a {
         color: var(--font-color-muted);
@@ -49,6 +52,7 @@
         font-weight: var(--font-semibold);
         transition: color 0.25s ease;
         text-transform: uppercase;
+        font-size: var(--normal-font-size);
       }
 
       &.current {
@@ -97,9 +101,7 @@
 
   &__btn {
     background-color: var(--primary);
-    border-radius: 10px;
     color: rgb(238, 238, 238);
-    padding: 0.5rem 1rem;
 
     &:hover {
       color: rgb(255, 255, 255);

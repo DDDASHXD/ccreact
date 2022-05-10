@@ -4,7 +4,7 @@ import data from "../assets/text.json";
 
 const Hero = () => {
   return (
-    <section id="nav-hjem">
+    <section className="section" id="nav-hjem">
       <main className="hero container-fluid section">
         <div className="hero__container col-11 col-md-8 col-lg-5">
           <h1>{data.home.title}</h1>
