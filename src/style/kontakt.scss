@@ -4,9 +4,12 @@
   justify-content: space-evenly;
   // padding-top: var(--header-height);
   height: 100vh;
+  &__h2 {
+    margin: 0 !important;
+  }
 
   &__container {
-    margin-top: var(--header-height);
+    padding-top: var(--header-height);
   }
 
   // height: calc(100vh - var(--header-height));
@@ -16,13 +19,16 @@
     display: flex;
     flex-direction: column;
     // line-height: 3rem;
-    margin-bottom: 2rem;
 
     a {
       color: var(--font-color);
       display: flex;
       position: relative;
       margin: 2rem 0;
+
+      &:hover {
+        color: var(--primary);
+      }
     }
 
     p {
@@ -60,12 +66,27 @@
   // display: flex;
   // flex-direction: column;
 
-  .input,
-  .text-area {
+  &__label {
+    padding-left: 0.25rem;
+  }
+
+  &__btn {
+    background-color: var(--title-color);
+    color: var(--body-color);
+
+    &:hover {
+      color: var(--body-color);
+      background-color: var(--font-color);
+    }
+  }
+  &__input,
+  &__text-area {
     background-color: var(--form-color);
     border: 0;
-
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
     box-shadow: var(--inner-shadow);
+    width: 100%;
 
     &:focus {
       background-color: var(--form-color-focus);
@@ -76,11 +97,6 @@
   // &__row {
   //   display: flex;
   // }
-
-  &__btn {
-    background-color: var(--font-color);
-    color: var(--body-color);
-  }
 }
 
 .map-desktop {

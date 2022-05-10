@@ -1,6 +1,7 @@
 .behandlinger {
   min-height: 100vh;
   background-color: var(--body-color);
+  padding-top: var(--header-height);
 
   h2 {
     text-align: center;
@@ -10,6 +11,7 @@
   span {
     color: var(--primary);
     font-size: var(--tiny-font-size);
+    font-weight: var(--font-medium);
   }
 
   h3 {
@@ -28,14 +30,16 @@
   a {
     color: var(--font-color);
     font-size: var(--small-font-size);
+
+    &:hover {
+      color: var(--primary);
+    }
   }
 
   &__card {
     position: relative;
   }
 }
-
-
 
 .pris {
   width: 4rem;
@@ -47,6 +51,7 @@
   justify-content: center;
   align-items: center;
   display: flex;
+
   // right: 0;
   // margin-top: -1.5rem;
 
@@ -59,4 +64,9 @@
 
     transform: translateY(-50%);
   }
+}
+
+.vector {
+  height: 350px;
+  width: 500px;
 }

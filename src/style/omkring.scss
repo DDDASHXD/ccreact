@@ -2,11 +2,20 @@
   background-color: var(--secondary);
   min-height: 100vh;
   position: relative;
+  padding-top: var(--header-height);
 
   &__info {
     background-color: var(--form-color);
     // box-shadow: var(--inner-shadow);
-    border-radius: 5px;
+    border-radius: 0 1rem 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: max-content;
+
+    &__img {
+      border-radius: 0 1rem 0 0;
+    }
 
     h3 {
       font-size: var(--font-h3);
@@ -39,11 +48,10 @@
     text-align: start;
   }
   &__list {
-    line-height: 0.5rem;
+    line-height: 1rem;
     text-align: start;
   }
 }
-
 .img-1 {
   object-fit: cover;
   height: 250px;
@@ -52,4 +60,18 @@
 .img-2 {
   object-fit: cover;
   height: 250px;
+}
+
+/* BELANGRIJKSTE HIERO */
+.sidebar {
+  width: 200px;
+  padding-top: 25px;
+}
+
+.sidebar-link {
+  padding: 10px;
+}
+.sidebar-link:hover {
+  border-right: 5px solid dimgray;
+  background-color: gainsboro;
 }
