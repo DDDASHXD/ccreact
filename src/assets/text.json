@@ -33,7 +33,7 @@
             "description": "Jeg vil guide og støtte dig på rejsen mod dine mål. Til samtalerne har du fuld mulighed for at åbne op om alle dine bekymringer og udfordringer og få mere ro på tankerne.",
             "price": "500 kr",
             "time": "60 min",
-            "image": "/assets/vector/1.svg",
+            "image": "/assets/vector/C.svg",
             "textOrder": "order-2 order-md-1",
             "imgOrder": "order-1 order-md-2"
         },
@@ -44,7 +44,7 @@
             "description": "Samtidig med den coachende samtale tilbydes du NADA behandling. Nada behandlinger en behandling, som kan under støtte udbyttet af samtalen.",
             "price": "550 kr",
             "time": "60 min",
-            "image": "/assets/vector/1.svg",
+            "image": "/assets/vector/cnada.svg",
             "textOrder": "order-2 order-md-2",
             "imgOrder": "order-1 order-md-1"
         },

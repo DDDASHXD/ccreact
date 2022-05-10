@@ -33,25 +33,9 @@
     text-decoration: none;
     text-transform: capitalize;
   }
+ 
   
-  html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-    width: 100vw;
-  }
-  
-  body {
-    font-size: var(--normal-font-size);
-    color: var(--font-color);
-    background-color: var(--bg-color);
-    font-family: var(--font-family);
-    overflow-x: hidden;
-    width: 100vw;
-  }
-  
-  img {
-    width: 100%;
-  }
+ 
   
   button {
     padding: 0;
@@ -72,22 +56,5 @@
     }
   }
   
-  .title {
-    font-size: var(--h1-font-size);
-    font-weight: var(--font-semibold);
-  }
+
   
-  .subtitle {
-    font-size: var(--h3-font-size);
-  }
-  
-  .muted {
-    color: var(--font-color-muted);
-  }
-  
-  .quote {
-    object-fit: cover;
-  
-    height: 160px;
-    width: 1000px;
-  }

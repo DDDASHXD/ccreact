@@ -4,11 +4,11 @@ import data from "../assets/text.json";
 
 const Footer = () => {
   return (
-    <footer className="footer section  container-fluid p-0">
-      <Row className=" p-3 p-md-5 ">
-        <Col md={6}>
+    <footer className="footer  container-fluid p-0">
+      <Row className="  m-0">
+        <Col md={6} className="p-lg-4">
           <Row className=" text-center">
-            <span className="footer__justdiv-intro">JustDiv</span>
+
             <h2 className="title m-0">{data.footer.justdiv.title}</h2>
 
 
@@ -28,8 +28,70 @@ const Footer = () => {
             </Col>
           </Row>
         </Col>
+        <Col xs={5} className="container   p-4 text-center text-lg-start">
+          {/* <!--Grid row--> */}
+          <div className="row gap-3 justify-content-center">
+            {/* <!--Grid column--> */}
+            <div className="col-lg-5 col-md-12 mb-4 mb-md-0">
+              <h5 className="">Firma oplysninger</h5>
+              <hr className="footer__hr" />
+              <ul class="list-unstyled mb-0">
+                <li>
+                  CVR-nr.:  36 32 44 65
+                </li>
+                <li>
+                  Betaling: over MobilePay
+                </li>
+              </ul>
+            </div>
+            {/* <!--Grid column--> */}
 
-        <Col md={6}>
+
+
+            {/* <!--Grid column--> */}
+            <div class="col-lg-5 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-0">Andre muligheder</h5>
+              <hr className="footer__hr" />
+
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    className="" target="_blank" rel="noreferrer"
+                    href="https://nlphuset.dk/?gclid=Cj0KCQjwiNSLBhCPARIsAKNS4_fBA4zSqv9zIun89VW9gSeHsIPOv1rAGwCZVaGB5sQCYOzLRGwtszYaApkZEALw_wcB "
+                  >
+                    Npl Huset
+                  </a>
+                </li>
+                <i>
+                  <a
+                    className="" target="_blank" rel="noopener noreferrer"
+                    href="https://nada-danmark.dk/netvaerk-og-behandling/behandlernetvaerk/"
+                  >
+                    Nada - Danmark
+                  </a>
+                </i>
+
+              </ul>
+            </div>
+            {/* <!--Grid column--> */}
+          </div>
+          {/* <!--Grid row--> */}
+
+        </Col>
+      </Row>
+      <div className=" footer__copy py-1 px-5 ">
+        <p className="footer__muted">©Coach Kolding</p>
+        <p className="footer__muted">@Just Div</p>
+      </div>
+
+
+    </footer>
+  );
+};
+
+export default Footer;
+
+/* <Col md={6}>
           <Row className="pt-5 pt-md-0 d-flex justify-content-end gap-0 text-start text-md-start">
             <Col xs={6} className="" >
               <h3>Firma oplysninger</h3>
@@ -53,18 +115,12 @@ const Footer = () => {
                   <a href="tel:+4532701494" className="footer__a">- Tlf: 32 70 14 94</a>
                 </li>
                 <br />
-                <li className="footer__list">
-                  <a className="footer__a"
-                    href="https://goo.gl/maps/2Xh9Z3CRwMDnqmPg7"
-                    target="_blank" rel="noreferrer"
-                  >
-                    <span> - Adresse: Grydhøj 16, <br /> 6000 Kolding</span>
-                  </a>
-                </li>
-              </ul>
-            </Col>
 
-            <Col xs={6} className="">
+              </ul>
+            </Col> */
+
+
+/* <Col xs={6} className="">
               <h3>Andre muligheder</h3>
               <hr className="footer__hr" />
               <ul className="p-0 ps-md-3 pe-5">
@@ -91,17 +147,8 @@ const Footer = () => {
                   </p>
                 </li>
               </ul>
-            </Col>
-          </Row>
+            </Col> */
+/* </Row>
         </Col>
-      </Row>
 
-      <Col xs={12} className="footer__copy px-5 py-1">
-        <p className="footer__muted">©Coach Kolding</p>
-        <p className="footer__muted">@Just Div</p>
-      </Col>
-    </footer>
-  );
-};
-
-export default Footer;
+      </Row> */

@@ -43,20 +43,20 @@ const MyNav = () => {
 
   return (
     <Navbar
-      fluid="true"
-      className={`nav fixed-top p1 ${scrolled ? "scrolled" : ""}`}
+
+      className={`nav container fixed-top p1 ${scrolled ? "scrolled" : ""}`}
       expand="lg"
     >
       <figure
         className="
-      col-2 p-0 m-0 ps-1
-      col-sm-2  
-      col-md-2 ps-md-4  pt-md-0
-      col-lg-2  pt-lg-2 pe-lg-5
-      col-xl-2 ps-xl-5 pt-xl-0
-      "
+          col-2 p-0 m-0 ps-1
+          col-sm-2  
+          col-md-2 ps-md-4  pt-md-0
+          col-lg-2  pt-lg-2 pe-lg-5
+          col-xl-2 ps-xl-5 pt-xl-0
+          "
       >
-        <img src={logo} alt="Coach Kolding " className="w-100 " />
+        <img src={logo} alt="Coach Kolding " className="w-100 d-none d-md-block" />
       </figure>
       <Navbar.Toggle
         className="border-0 pe-2 py-0 my-0 "

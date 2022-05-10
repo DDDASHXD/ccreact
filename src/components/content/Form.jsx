@@ -21,14 +21,14 @@ const ContactForm = () => {
         );
     }
     return (
-        <form className="form"
+        <form className="form "
             action={FORM_ENDPOINT}
             onSubmit={handleSubmit}
             method="POST"
             target="_blank"
         >
 
-            <Row className=" gap-md-1 ">
+            <Row className=" gap-md-1  m-0">
                 <Col xs={5} className="mb-2 mb-sm-3 pt-0">
                     <label className="form__label">Fornavn</label>
                     <input
@@ -50,7 +50,7 @@ const ContactForm = () => {
                     />
                 </Col>
             </Row>
-            <Row className="gap-md-1">
+            <Row className="gap-md-1  m-0">
                 <Col xs={5} className="mb-2 mb-sm-3 pt-0">
                     <label className="form__label">Email</label>
                     <input
