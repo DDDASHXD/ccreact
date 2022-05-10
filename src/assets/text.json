@@ -2,14 +2,14 @@
     "home": {
         "title": "Liv og karriere",
         "subtitle": "coaching",
-        "description": "Personlig udvikling. I rolige omgivelser vil jeg guide dig på vej i den retning du ønsker. Find dit personlige udviklingspotentiale. Nå målene i dit liv. Genfind livsgnisten. Få din retning i livet. Opnå et liv i balance. Jeg kan være din guide på rejsen til dit… ",
+        "description": "Personlig udvikling. I rolige omgivelser vil jeg guide dig på vej i den retning du ønsker. Find dit personlige udviklingspotentiale. Nå målene i dit liv. Genfind livsgnisten. Få din retning i livet. Opnå et liv i balance. Jeg kan være din guide på rejsen til dit.",
         "bgImage": "/heroImg.png"
     },
     "omkring": {
         "lene-img": "/assets/lene.jpeg",
         "room-img": "/assets/room.jpg",
         "home-img": "/assets/home.jpg",
-        "text": "Skal jeg være din guide på rejsen til dine livsmål? Ønsker du personlig udvikling? Vil du finde balancen i livet? Vil du nå dine mål.Jeg har 30 års erfaring med at guide, støtte enkeltpersoner og grupper med personlig/faglig udvikling. Det vil jeg gerne give dig chancen for at opnå din udvikling, derfor tilbyder jeg coaching. ",
+        "text": "Skal jeg være din guide på rejsen til dine livsmål? Ønsker du personlig udvikling? Vil du finde balancen i livet? Vil du nå dine mål. Jeg har 30 års erfaring med at guide, støtte enkeltpersoner og grupper med personlig/faglig udvikling. Det vil jeg gerne give dig chancen for at opnå din udvikling, derfor tilbyder jeg coaching. ",
         "title": "Faglig baggrund",
         "erfaring": [
             "Socialrådgiver",
@@ -30,12 +30,12 @@
         {
             "behandlingId": 0,
             "name": "Coachende samtaler",
-            "description": "Samtidig med den coachende samtale tilbydes du NADA behandling. Nada behandlinger en behandling, som kan under støtte udbyttet af samtalen.",
+            "description": "Jeg vil guide og støtte dig på rejsen mod dine mål. Til samtalerne har du fuld mulighed for at åbne op om alle dine bekymringer og udfordringer og få mere ro på tankerne.",
             "price": "500 kr",
             "time": "60 min",
             "image": "/assets/vector/1.svg",
-            "textOrder": "order-xs-2 order-md-1",
-            "imgOrder": "order-xs-1 order-md-2"
+            "textOrder": "order-2 order-md-1",
+            "imgOrder": "order-1 order-md-2"
         },
         {
             "behandlingId": 1,
@@ -45,8 +45,8 @@
             "price": "550 kr",
             "time": "60 min",
             "image": "/assets/vector/1.svg",
-            "textOrder": "order-xs-1 order-md-2",
-            "imgOrder": "order-xs-2 order-md-1"
+            "textOrder": "order-2 order-md-2",
+            "imgOrder": "order-1 order-md-1"
         },
         {
             "behandlingId": 2,
@@ -56,8 +56,8 @@
             "price": "50 kr",
             "time": "45 min",
             "image": "/assets/vector/1.svg",
-            "textOrder": "order-1",
-            "imgOrder": "order-2"
+            "textOrder": "order-2 order-md-1",
+            "imgOrder": "order-1 order-md-2"
         },
         {
             "behandlingId": 3,
@@ -66,8 +66,8 @@
             "price": "850 kr",
             "time": "120 min",
             "image": "/assets/vector/1.svg",
-            "textOrder": "order-2",
-            "imgOrder": "order-1"
+            "textOrder": "order-2 order-md-2",
+            "imgOrder": "order-1 order-md-1"
         },
         {
             "behandlingId": 4,
@@ -76,18 +76,18 @@
             "price": "850 kr",
             "time": "120 min",
             "image": "/assets/vector/1.svg",
-            "textOrder": "order-1",
-            "imgOrder": "order-2"
+            "textOrder": "order-2 order-md-1",
+            "imgOrder": "order-1 order-md-2"
         },
         {
             "behandlingId": 5,
             "name": "Online coaching",
-            "description": "Kan du får støtte til at føre samtaler med andre i dit nærtværk, det kan være både det private netværk og øvrige netværk.",
+            "description": "Online med video samtale vil jeg guide og støtte dig på rejsen mod dine mål. Til samtalerne har du fuld mulighed for at åbne op om alle dine bekymringer og udfordringer og få mere ro på tankerne.",
             "price": "450 kr",
             "time": "60 min",
             "image": "/assets/vector/1.svg",
-            "textOrder": "order-2",
-            "imgOrder": "order-1"
+            "textOrder": "order-2 order-md-2",
+            "imgOrder": "order-1 order-md-1"
         }
     ],
     "footer": {
@@ -108,7 +108,6 @@
                     "href": "",
                     "class": "bxl-instagram-alt"
                 }
-         
             ],
             "title": "Website Creators",
             "name": "JustDiv",
