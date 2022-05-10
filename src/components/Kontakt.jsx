@@ -9,7 +9,7 @@ import { Row, Col } from "react-bootstrap";
 const Kontakt = () => {
 
   return (
-    <section fluid className="kontakt  section" id="nav-kontakt">
+    <section className="kontakt  section" id="nav-kontakt">
       <Row className="kontakt__container">
         <Col xs={12} md={6}>
           <Row className="justify-contet-center pt-lg-5">

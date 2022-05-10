@@ -43,7 +43,7 @@ const MyNav = () => {
 
   return (
     <Navbar
-      fluid="true"
+
       className={`nav fixed-top p1 ${scrolled ? "scrolled" : ""}`}
       expand="lg"
     >

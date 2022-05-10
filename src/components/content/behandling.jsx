@@ -5,7 +5,7 @@ const Behandling = () => {
   return (
     <>
       {data.Behandlinger.map((item, index) => (
-        <Row id="card" key={item.id} className="py-md-5 justify-content-center pb-5 px-5 pt-md-5">
+        <Row id="card" key={index} className="py-md-5 justify-content-center pb-5 px-5 pt-md-5">
 
           <Col xs={12} md={5} className={"pt-md-5 p-0 ps-2 ps-md-0 " + item.textOrder}>
             <span>{item.time}</span>
@@ -21,7 +21,7 @@ const Behandling = () => {
 
             <p className="muted">{item.description}</p>
             <a className="text-decoration-none" target="_blank" href="/bestilling">
-              Bestil tid <i class="bx bx-chevron-right"></i>
+              Bestil tid <i className="bx bx-chevron-right"></i>
             </a>
           </Col>
 

@@ -20,7 +20,7 @@ const Footer = () => {
               className=" footer__icons d-flex justify-content-center gap-3"
             >
               {data.footer.justdiv.social.map((item, index) => (
-                <a href={item.href}>
+                <a key={index} href={item.href}>
                   <i className={"bx " + item.class}></i>
 
                 </a>
