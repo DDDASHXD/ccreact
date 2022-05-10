@@ -18,6 +18,8 @@ const Bestilling = () => {
   const [passValue, setPassValue] = useState("");
   const [commentValue, setCommentValue] = useState("");
 
+  const [loginModal, setLoginModal] = useState(false);
+
   useEffect(() => {}, []);
   return (
     <MantineProvider
@@ -62,6 +64,8 @@ const Bestilling = () => {
               setPhoneValue={(value) => setPhoneValue(value)}
               setPassValue={(value) => setPassValue(value)}
               setCommentValue={(value) => setCommentValue(value)}
+              loginModal={loginModal}
+              setLoginModal={(value) => setLoginModal(value)}
             />
           </div>
         </div>
