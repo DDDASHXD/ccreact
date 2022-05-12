@@ -21,60 +21,64 @@ const Footer = () => {
             >
               {data.footer.justdiv.social.map((item, index) => (
                 <a href={item.href}>
-                  <i className={"bx " + item.class}></i>
+                  <i className={"bx footer__bx " + item.class}></i>
 
                 </a>
               ))}
             </Col>
           </Row>
         </Col>
-        <Col xs={5} className="container   p-4 text-center text-lg-start">
+        <Col xs={6} className="container  pt-lg-5   text-center text-lg-start">
           {/* <!--Grid row--> */}
-          <div className="row gap-3 justify-content-center">
+          <Row className="m-0 gap-4  justify-content-center">
             {/* <!--Grid column--> */}
-            <div className="col-lg-5 col-md-12 mb-4 mb-md-0">
+            <Col md={12} lg={5} className=" mb-4 mb-md-0">
               <h5 className="">Firma oplysninger</h5>
               <hr className="footer__hr" />
               <ul class="list-unstyled mb-0">
                 <li>
                   CVR-nr.:  36 32 44 65
                 </li>
+                <br />
                 <li>
                   Betaling: over MobilePay
                 </li>
               </ul>
-            </div>
+            </Col>
             {/* <!--Grid column--> */}
 
 
 
             {/* <!--Grid column--> */}
-            <div class="col-lg-5 col-md-12 mb-4 mb-md-0">
-              <h5 class="text-uppercase mb-0">Andre muligheder</h5>
+            <Col md={12} lg={5} class=" mb-4 mb-md-0">
+              <h5 class=" mb-0">Andre muligheder</h5>
               <hr className="footer__hr" />
 
               <ul class="list-unstyled">
                 <li>
                   <a
-                    className="" target="_blank" rel="noreferrer"
+                    className="foot-a" target="_blank" rel="noreferrer"
                     href="https://nlphuset.dk/?gclid=Cj0KCQjwiNSLBhCPARIsAKNS4_fBA4zSqv9zIun89VW9gSeHsIPOv1rAGwCZVaGB5sQCYOzLRGwtszYaApkZEALw_wcB "
                   >
                     Npl Huset
                   </a>
+                  <p className="footer__muted">Lorem ipsum dolor sit amet.</p>
                 </li>
-                <i>
+
+                <li>
                   <a
-                    className="" target="_blank" rel="noopener noreferrer"
+                    className="foot-a" target="_blank" rel="noopener noreferrer"
                     href="https://nada-danmark.dk/netvaerk-og-behandling/behandlernetvaerk/"
                   >
                     Nada - Danmark
                   </a>
-                </i>
+                  <p className="footer__muted">Lorem ipsum dolor sit amet.</p>
+                </li>
 
               </ul>
-            </div>
+            </Col>
             {/* <!--Grid column--> */}
-          </div>
+          </Row>
           {/* <!--Grid row--> */}
 
         </Col>

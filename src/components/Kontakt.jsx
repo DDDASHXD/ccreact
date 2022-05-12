@@ -40,7 +40,7 @@ const Kontakt = () => {
                 referrerPolicy="no-referrer-when-downgrade"
               ></Iframe>
             </Col>
-            <Col xs={12} sm={11} className="ps-5 ps-md-3 kontakt__form order-3 order-md-2 p-0 ps-1 pt-3 px-md-5 m-auto">
+            <Col xs={12} sm={12} className=" kontakt__form order-3 order-md-2 p-0  pt-3 m-auto">
 
               <ContactForm />
 

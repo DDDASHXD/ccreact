@@ -27,7 +27,7 @@ const Behandling = () => {
 
           <Col xs={12} md={5} className={" justify-content-center d-flex " + item.imgOrder}>
 
-            <img className="vector" src={item.image} alt="" />
+            <img className="vector pt-4 px-3" src={item.image} alt="" />
           </Col>
         </Row>
       ))}

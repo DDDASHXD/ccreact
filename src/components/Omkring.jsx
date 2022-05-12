@@ -6,9 +6,9 @@ import data from "../assets/text.json";
 const Omkring = () => {
 
   return (
-    <section className="omkring  container-fluid p-0 " id="nav-omkring">
+    <section className="omkring  container-fluid py-2 py-md-5 " id="nav-omkring">
       <Row className="justify-content-center py-4  m-0">
-        <Col xs={12} className="omkring__textarea">
+        <Col xs={11} md={6} className="omkring__textarea">
           <span className="subtitle">Omkring</span>
           <h2 className="title">Coach Kolding</h2>
           <hr />

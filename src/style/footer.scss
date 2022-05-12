@@ -2,8 +2,19 @@
 
 .footer {
   background-color: var(--secondary);
+  .foot-a {
+    text-decoration: none;
+    color: var(--font-color);
 
-  h3 {
+    &:hover {
+      color: var(--primary);
+      font-weight: var(--font-semibold);
+    }
+  }
+  &__bx {
+  }
+
+  h5 {
     font-size: var(--h3-font-size);
   }
 
@@ -56,7 +67,7 @@
   }
   &__muted {
     color: var(--font-color-muted);
-    font-size: var(--small-font-size);
+    font-size: var(--smaller-font-size);
   }
 
   &__copy {
@@ -65,7 +76,6 @@
     color: var(--body-color);
     display: flex;
     justify-content: space-between;
- 
   }
 }
 
