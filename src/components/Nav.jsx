@@ -61,10 +61,10 @@ const MyNav = () => {
           <i className='bx bx-menu burger'></i>
         </div>
 
-        <div className="mobile-menu collapse navbar-collapse " id="navbarNav">
-          <div className="gap-lg-5 nav__container justify-content-end">
-            <ul className="navbar-nav pb-3
-   justify-content-end d-flex pt-lg-3 gap-lg-5 pb-lg-1 pb-lg-3
+        <div className="mobile-menu collapse navbar-collapse  justify-content-end d-flex" id="navbarNav">
+          <div className="gap-lg-5 px-lg-3 nav__container justify-content-end d-flex">
+            <ul className="navbar-nav pb-3 pb-lg-0 gap-lg-5
+   justify-content-end d-flex 
            ">
 
               <li className="nav-item  navlink nav-hjem">
