@@ -7,6 +7,8 @@ import {
   Textarea,
   Loader,
   Tooltip,
+  Modal,
+  Button,
 } from "@mantine/core";
 import {
   Forms,
@@ -22,6 +24,21 @@ const Info = (props) => {
   const [user, setUser] = useState(false);
   return (
     <section className="info section">
+      <Modal
+        centered
+        opened={props.loginModal}
+        onClose={() => props.setLoginModal(false)}
+        title="Log ind"
+        overlayBlur={3}
+        overlayOpacity={0.2}
+        className="login-modal"
+      >
+        <div className="login-wrapper">
+          <TextInput placeholder="john@doe.com" label="Email addresse" />
+          <PasswordInput placeholder="*********" label="Adgangskode" />
+          <Button className="bestilling-button">Log ind</Button>
+        </div>
+      </Modal>
       <Title order={3}>Information</Title>
       <form className="infoForm">
         {user ? (
@@ -114,6 +131,13 @@ const Info = (props) => {
           className="input"
           size="md"
         />
+        <Button className="bestilling-button"> Send bestilling</Button>
+        <p className="preUser">
+          Har du allerede en konto?{" "}
+          <span className="formLink" onClick={() => props.setLoginModal(true)}>
+            Så log ind her
+          </span>
+        </p>
       </form>
     </section>
   );

@@ -12,7 +12,6 @@ a {
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  max-width: 100vw;
 }
 
 body {
@@ -20,8 +19,6 @@ body {
   color: var(--font-color);
   background-color: var(--bg-color);
   font-family: var(--font-family);
-  overflow-x: hidden;
-  max-width: 100vw;
 }
 
 img {
@@ -30,10 +27,6 @@ img {
 
 p {
   font-size: var(--normal-font-size);
-}
-
-.section {
-  width: 100%;
 }
 
 .button {
@@ -47,6 +40,7 @@ p {
 .title {
   font-size: var(--h1-font-size);
   font-weight: var(--font-semibold);
+  margin-bottom: 0;
 }
 
 .subtitle {
@@ -61,3 +55,4 @@ p {
   object-fit: cover;
   width: 100%;
 }
+

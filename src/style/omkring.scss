@@ -1,7 +1,6 @@
 .omkring {
   background-color: var(--secondary);
-  min-height: max-content;
-  position: relative;
+
   padding-top: var(--header-height);
 
   &__info {
@@ -34,9 +33,9 @@
     text-align: center;
 
     hr {
-      margin: 1rem auto;
+      margin: 0.5rem auto;
       border: 1px solid var(--primary);
-      width: 200px;
+      width: 50%;
     }
   }
 

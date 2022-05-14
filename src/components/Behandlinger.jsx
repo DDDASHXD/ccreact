@@ -7,7 +7,7 @@ const Behandlinger = () => {
     <section className="behandlinger section" id="nav-behandlinger">
       <Container >
         <h2 className="title pt-md-4">Behandlinger</h2>
-        <Row className="  px-3 px-md-0 behandlinger__data d-flex justify-content-center ">
+        <Row className="gap-5  px-3 px-md-0 behandlinger__data justify-content-center  m-0">
           <Behandling />
         </Row>
       </Container>
