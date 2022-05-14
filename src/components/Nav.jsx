@@ -61,8 +61,8 @@ const MyNav = () => {
           <i className='bx bx-menu burger'></i>
         </div>
 
-        <div className="mobile-menu collapse navbar-collapse  justify-content-end d-flex" id="navbarNav">
-          <div className="gap-lg-5 px-lg-3 nav__container justify-content-end d-flex">
+        <div className="mobile-menu collapse navbar-collapse " id="navbarNav">
+          <div className="ms-auto gap-lg-5 px-lg-3 nav__container justify-content-end d-flex flex-column flex-lg-row">
             <ul className="navbar-nav pb-3 pb-lg-0 gap-lg-5
    justify-content-end d-flex 
            ">
