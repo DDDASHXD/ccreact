@@ -5,14 +5,14 @@ import data from "../assets/text.json";
 const Footer = () => {
   return (
     <footer className="footer  container-fluid p-0">
-      <Row className="  m-0">
-        <Col md={6} className="p-lg-4">
+      <Row className=" py-3 m-0 justify-content-center">
+        <Col xs={12} sm={8} md={6} className="p-lg-4">
           <Row className=" text-center">
 
             <h2 className="title m-0">{data.footer.justdiv.title}</h2>
 
 
-            <Col className="px-5 ">
+            <Col className="px-md-5 ">
               <p className="footer__justdiv-text px-1 muted">{data.footer.justdiv.websiteInfo}</p>
             </Col>
             <Col
@@ -28,11 +28,12 @@ const Footer = () => {
             </Col>
           </Row>
         </Col>
-        <Col xs={6} className="container  pt-lg-5   text-center text-lg-start">
+        <Col xs={12} md={6} className="container pt-4  pt-lg-5 
+         text-center text-lg-start">
           {/* <!--Grid row--> */}
           <Row className="m-0 gap-4  justify-content-center">
             {/* <!--Grid column--> */}
-            <Col md={12} lg={5} className=" mb-4 mb-md-0">
+            <Col xs={12} sm={5} md={5} className=" mb-4 mb-md-0">
               <h5 className="">Firma oplysninger</h5>
               <hr className="footer__hr" />
               <ul class="list-unstyled mb-0">
@@ -50,7 +51,7 @@ const Footer = () => {
 
 
             {/* <!--Grid column--> */}
-            <Col md={12} lg={5} class=" mb-4 mb-md-0">
+            <Col xs={12} sm={5} md={5} class=" mb-4 mb-md-0">
               <h5 class=" mb-0">Andre muligheder</h5>
               <hr className="footer__hr" />
 
@@ -83,7 +84,7 @@ const Footer = () => {
 
         </Col>
       </Row>
-      <div className=" footer__copy py-1 px-5 ">
+      <div className=" footer__copy py-1 px-1 px-md-5 ">
         <p className="footer__muted">©Coach Kolding</p>
         <p className="footer__muted">@Just Div</p>
       </div>

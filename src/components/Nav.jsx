@@ -42,68 +42,65 @@ const MyNav = () => {
   });
 
   return (
-    <Navbar
-
-      className={`nav container fixed-top p1 ${scrolled ? "scrolled" : ""}`}
-      expand="lg"
+    <nav
+      className={`nav  navbar navbar-expand-lg fixed-top p1     ${scrolled ? "scrolled" : ""}`}
     >
-      <figure
-        className="
+      <div className=" container-fluid px-0">
+        <figure
+          className="
           col-2 p-0 m-0 ps-1
           col-sm-2  
           col-md-2 ps-md-4  pt-md-0
           col-lg-2  pt-lg-2 pe-lg-5
           col-xl-2 ps-xl-5 pt-xl-0
           "
-      >
-        <img src={logo} alt="Coach Kolding " className="w-100 d-none d-md-block" />
-      </figure>
-      <Navbar.Toggle
-        className="border-0 pe-2 py-0 my-0 "
-        aria-controls="basic-navbar-nav"
-      />
+        >
+          <img src={logo} alt="Coach Kolding " className="w-100 " />
+        </figure>
+        <div className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i className='bx bx-menu burger'></i>
+        </div>
 
-      <Navbar.Collapse xs={12} id="basic-navbar-nav">
-        <Col xs={12} className="">
-          <nav className="px-1 pe-md-5 nav__bg">
-            <ul className="justify-content-end d-flex gap-4 gap-md-5 pt-lg-3 pb-1 pb-lg-0">
-              <li className="navlink nav-hjem">
-                <a href="#nav-hjem">Hjem</a>
+        <div className="mobile-menu collapse navbar-collapse " id="navbarNav">
+          <div className="gap-lg-5 nav__container justify-content-end">
+            <ul className="navbar-nav pb-3
+   justify-content-end d-flex pt-lg-3 gap-lg-5 pb-lg-1 pb-lg-3
+           ">
+
+              <li className="nav-item  navlink nav-hjem">
+                <a className="nav-link" href="#nav-hjem">Hjem</a>
               </li>
 
-              <li className="navlink nav-omkring">
-                <a href="#nav-omkring">Omkring</a>
+              <li className="nav-item navlink nav-omkring">
+                <a className="nav-link" href="#nav-omkring">Omkring</a>
               </li>
 
-              <li className="navlink nav-behandlinger">
-                <a href="#nav-behandlinger">Behandlinger</a>
+              <li className="nav-item navlink nav-behandlinger">
+                <a className="nav-link" href="#nav-behandlinger">Behandlinger</a>
               </li>
 
-              <li className="navlink nav-kontakt">
-                <a href="#nav-kontakt">Kontakt</a>
+              <li className="nav-item navlink nav-kontakt">
+                <a className="nav-link" href="#nav-kontakt">Kontakt</a>
               </li>
-              <div className="  d-flex justify-content-center d-lg-none">
-                <a
-                  target="_blank"
-                  className=" button nav__btn"
-                  href="/bestilling"
-                >
-                  Bestil tid
-                </a>
-              </div>
+
             </ul>
-          </nav>
-        </Col>
-      </Navbar.Collapse>
-      <Col
-        xs={1}
-        className=" col-2 d-flex justify-content-center d-none d-lg-block"
-      >
-        <a target="_blank" className=" button nav__btn" href="/bestilling">
-          Bestil tid
-        </a>
-      </Col>
-    </Navbar>
+
+            <div
+
+              className=" d-flex justify-content-center "
+            >
+              <a target="_blank" className=" button nav__btn" href="/bestilling">
+                Bestil tid
+              </a>
+            </div>
+          </div>
+          {/* <div className=" mx-auto mx-lg-0"> */}
+
+        </div>
+        {/* </div> */}
+      </div>
+
+    </nav >
   );
 };
 
