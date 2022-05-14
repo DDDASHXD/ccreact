@@ -1,7 +1,7 @@
-import { Navbar, Col } from "react-bootstrap";
+
 import logo from "../assets/logo.svg";
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+
 
 import "../style/nav.scss";
 // import { Navbar, Container } from "react-bootstrap";
@@ -45,7 +45,7 @@ const MyNav = () => {
     <nav
       className={`nav  navbar navbar-expand-lg fixed-top p1     ${scrolled ? "scrolled" : ""}`}
     >
-      <div className=" container-fluid px-0">
+      <div className=" container-fluid px-0 ">
         <figure
           className="
           col-2 p-0 m-0 ps-1
@@ -55,14 +55,14 @@ const MyNav = () => {
           col-xl-2 ps-xl-5 pt-xl-0
           "
         >
-          <img src={logo} alt="Coach Kolding " className="w-100 " />
+          <img loading="lazy" src={logo} alt="Coach Kolding " className="w-100 " />
         </figure>
         <div className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <i className='bx bx-menu burger'></i>
         </div>
 
         <div className="mobile-menu collapse navbar-collapse " id="navbarNav">
-          <div className="ms-auto gap-lg-5 px-lg-3 nav__container justify-content-end d-flex flex-column flex-lg-row">
+          <div className="ms-auto m-0 gap-lg-5 px-lg-3 nav__container justify-content-end d-flex flex-column flex-lg-row">
             <ul className="navbar-nav pb-3 pb-lg-0 gap-lg-5
    justify-content-end d-flex 
            ">
