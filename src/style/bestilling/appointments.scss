@@ -1,0 +1,23 @@
+.appointments {
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+}
+
+.centerHoriz {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.edit {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.button {
+    color: white!important;
+}

@@ -4,7 +4,6 @@ import "../../style/bestilling/treatment.scss";
 import data from "../../assets/text.json";
 
 const Treatment = (props) => {
-  const [treatment, setTreatment] = useState(0);
   return (
     <>
       <ScrollArea className="treatment section">
@@ -13,9 +12,9 @@ const Treatment = (props) => {
           {data.Behandlinger.map((item, index) => (
             <div
               className={`treatment-card ${
-                treatment === item.behandlingId ? "active" : ""
+                props.treatment === item.behandlingId ? "active" : ""
               }`}
-              onClick={() => setTreatment(item.behandlingId)}
+              onClick={() => props.setTreatment(item.behandlingId)}
               key={item.name}
             >
               <div className="treatment-card__header">

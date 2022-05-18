@@ -12,15 +12,21 @@
     flex-direction: column;
     gap: 20px;
 
+
+    .formLink {
+        color: var(--primary);
+        cursor: pointer;
+        user-select: none;
+    }
+
     .preUser {
         margin-top: -20px;
-
-        .formLink {
-            color: var(--primary);
-            cursor: pointer;
-            user-select: none;
-        }
     }
+}
+
+.username {
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .login-wrapper {
@@ -36,5 +42,11 @@
     &:hover {
         background-color: #749569;
     }
+}
+
+.bestillingSuccess {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
