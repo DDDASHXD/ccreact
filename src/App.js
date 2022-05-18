@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Bestilling from './views/Bestilling'
 import Landing from './views/Landing';
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.js";
 import './style/variables.scss';
 import './style/main.scss';
 
