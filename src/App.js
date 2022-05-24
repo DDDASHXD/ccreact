@@ -1,8 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 //import { Grid, Breakpoint, } from 'react-bootstrap'
+
 import Bestilling from './views/Bestilling'
 import Landing from './views/Landing';
+import AdminView from './views/admin';
+
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.js";
 import './style/variables.scss';
@@ -16,6 +19,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Landing />} />
           <Route path="/bestilling" element={<Bestilling />} />
+          <Route path="/admin" element={<AdminView />} />
         </Routes>
       </Router>
     </div>

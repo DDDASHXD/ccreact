@@ -1,0 +1,30 @@
+.adminView {
+    min-height: 100vh;
+    display: flex;
+
+    &-btn {
+        color: white!important;
+        padding: 0 10px!important;
+    }
+}
+
+.login {
+    min-height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .admin-btn {
+            margin-top: 10px!important;
+        }
+    }
+}
+
+.admin {
+    height: 100%;
+}

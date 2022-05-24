@@ -331,7 +331,7 @@ const Info = (props) => {
           label="Kommentar"
           description="Er der noget ekstra, jeg skal vide?"
           icon={<Message size={13} />}
-          required
+          // required
           className="input"
           size="md"
         />

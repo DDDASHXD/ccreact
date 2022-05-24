@@ -94,6 +94,8 @@ const Appointments = (props) => {
         setEditing({ editing: false });
         setDoneLoading(false);
       });
+
+    props.setAppointmentSize("xl");
   };
 
   useEffect(() => {
